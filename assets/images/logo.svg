@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background for Favicon (transparent for inline) -->
+  <circle cx="256" cy="256" r="240" fill="#8F2D2D" />
+  <!-- Noodle / Wave Motif -->
+  <path d="M140 280 Q 200 180 256 280 T 372 280" fill="none" stroke="#F4EBDD" stroke-width="24" stroke-linecap="round"/>
+  <path d="M140 330 Q 200 230 256 330 T 372 330" fill="none" stroke="#F4EBDD" stroke-width="24" stroke-linecap="round"/>
+  <!-- Chopsticks -->
+  <line x1="380" y1="120" x2="180" y2="380" stroke="#D6A85F" stroke-width="16" stroke-linecap="round" />
+  <line x1="410" y1="140" x2="210" y2="400" stroke="#D6A85F" stroke-width="16" stroke-linecap="round" />
+</svg>
