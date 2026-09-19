@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
     // 1. Navbar Scroll Effect
     const mainNav = document.getElementById('mainNav');
     
@@ -90,6 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 5. RTL Toggle
     const rtlToggleBtn = document.getElementById('rtl-toggle');
+    const savedDir = localStorage.getItem('nami-dir');
+    if (savedDir) {
+        htmlElement.setAttribute('dir', savedDir);
+    }
     
     if (rtlToggleBtn) {
         rtlToggleBtn.addEventListener('click', (e) => {
@@ -98,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
             
             htmlElement.setAttribute('dir', newDir);
-            // Optionally save to local storage if desired
+            localStorage.setItem('nami-dir', newDir);
         });
     }
 
@@ -213,3 +217,4 @@ document.addEventListener('DOMContentLoaded', () => {
         navC.addEventListener('hide.bs.collapse', () => document.body.style.overflow = '');
     }
 });
+
