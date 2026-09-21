@@ -447,7 +447,9 @@ html[data-theme='dark'] .navbar-premium {
 
 html[data-theme='dark'] .navbar-brand,
 html[data-theme='dark'] .nav-link,
-html[data-theme='dark'] .nav-icon-btn,
+html[data-theme='dark'] .nav-icon-btn {
+    color: #ffffff !important;
+}
 
 html[data-theme='dark'] .navbar-premium.scrolled,
 html[data-theme='dark'] .navbar-premium {

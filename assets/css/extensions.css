@@ -35,6 +35,10 @@
     transform: translateY(-5px);
 }
 
+html[data-theme="dark"] #scrollTopBtn {
+    color: #ffffff !important;
+}
+
 /* RTL Support via Logical Properties */
 html[dir="rtl"] {
     text-align: right;
@@ -50,8 +54,13 @@ html[data-theme="dark"] body {
     --surface: #1B1714;
     --text: #F5EEE2;
     --muted: #B8ACA0;
-    --dark-deep: #F5EEE2; /* Invert headings */
     --border: rgba(245, 238, 226, 0.12);
+}
+
+html[dir="rtl"] .form-select {
+    background-position: left 0.75rem center;
+    padding-left: 2.25rem;
+    padding-right: 0.75rem;
 }
 
 html[data-theme="dark"] .navbar-premium.scrolled {
@@ -59,7 +68,8 @@ html[data-theme="dark"] .navbar-premium.scrolled {
     border-bottom: 1px solid var(--border);
 }
 
-html[data-theme="dark"] .text-white-50 {
+html[data-theme="dark"] .text-white-50,
+html[data-theme="dark"] .text-muted {
     color: var(--muted) !important;
 }
 
