@@ -4,267 +4,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAMI Noodle | Contact</title>
+    <title>NAMI Noodle | Reservations, Enquiries & Contact</title>
+    <meta name="description" content="Get in touch with NAMI Noodle. Table reservations, private tatami dining, event catering, and guest dining FAQs.">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/extensions.css">
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-xl fixed-top navbar-premium bg-surface" id="mainNav">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <img src="assets/images/logo.svg" alt="NAMI Noodle" width="32" height="32">
+                <img src="assets/images/logo.svg" alt="NAMI Noodle" width="34" height="34">
                 <span>NAMI NOODLE</span>
             </a>
             <button class="navbar-toggler border-0 filter-invert" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navC"><span class="navbar-toggler-icon"></span></button>
+                data-bs-target="#navC" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navC">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2 (Izakaya)</a></li>
                     <li class="nav-item"><a class="nav-link" href="our-story.html">Our Story</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
                     <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                 </ul>
-                                <div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center gap-3 mt-4 mt-xl-0">
+                <div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center gap-3 mt-4 mt-xl-0">
                     <div class="d-flex align-items-center gap-3">
-                        <button class="nav-icon-btn" id="theme-toggle" aria-label="Theme">🌙</button>
-                        <button class="nav-icon-btn" id="rtl-toggle" aria-label="RTL">⇄</button>
-                    </div><a href="order.html" class="btn btn-premium">Order Enquiry</a>
+                        <button class="nav-icon-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+                        <button class="nav-icon-btn" id="rtl-toggle" aria-label="Toggle RTL Mode">⇄</button>
+                    </div>
+                    <a href="order.html" class="btn btn-premium">Order Online</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- SECTION 1: Hero -->
-    <header class="py-5 text-center position-relative overflow-hidden bg-dark-deep text-white">
+    <!-- Header -->
+    <header class="py-5 text-center position-relative overflow-hidden bg-dark-deep text-white" style="margin-top: 10px;">
         <div class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0;">
-            <img src="assets/images/contact-hero.jpg" alt="Hero background"
+            <img src="assets/images/contact-hero.jpg" alt="Contact Hero Background"
                 class="w-100 h-100 object-fit-cover opacity-50">
         </div>
         <div class="container py-5 reveal-up active position-relative hero-content-bg" style="z-index: 1;">
-            <h1 class="display-3 fw-bold mb-3 text-white">Let's Talk Bowls</h1>
-            <p class="lead-text mx-auto text-white" style="max-width: 500px;">Get in touch for catering, feedback, or
-                general enquiries.</p>
+            <span class="badge-tag badge-tag-accent mb-2">WE ARE LISTENING</span>
+            <h1 class="display-3 fw-bold mb-3 text-white">Let's Connect</h1>
+            <p class="lead-text mx-auto text-white" style="max-width: 550px;">Private dining reservations, group catering inquiries, press features, or thoughts on your last bowl.</p>
         </div>
     </header>
 
-    <!-- SECTION 2: Form -->
-    <section class="py-5 my-5">
+    <!-- Contact Form & Details Section -->
+    <section class="py-5 my-4">
         <div class="container py-4">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0 reveal-up text-center text-lg-start">
-                    <h2 class="mb-4">Order Enquiry</h2>
-                    <p class="lead-text mb-5">Fill out the form below to initiate a catering or group order.</p>
-                    <ul class="list-unstyled d-flex flex-column align-items-center align-items-lg-start gap-3">
-                        <li class="d-flex align-items-center gap-3"><span class="text-accent">—</span>
-                            hello@naminoodle.com</li>
-                        <li class="d-flex align-items-center gap-3"><span class="text-accent">—</span> +1 (555) 123-4567
-                        </li>
-                        <li class="d-flex align-items-center gap-3"><span class="text-accent">—</span> 123 Artisan Way
-                        </li>
-                        <li class="d-flex align-items-center gap-3 mt-3">
-                            <div class="d-flex justify-content-center justify-content-lg-start gap-3">
-                                <a href="#" class="text-secondary hover-lift social-icon-hover"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                        class="bi bi-instagram" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                    </svg></a>
-                                <a href="#" class="text-secondary hover-lift social-icon-hover"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                        class="bi bi-facebook" viewBox="0 0 16 16">
-                                        <path
-                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                    </svg></a>
-                                <a href="#" class="text-secondary hover-lift social-icon-hover"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                        class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                        <path
-                                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
-                                    </svg></a>
-                            </div>
-                        </li>
-                    </ul>
+            <div class="row align-items-start g-5">
+                <div class="col-lg-5">
+                    <span class="badge-tag badge-tag-primary mb-2">DIRECT COMMUNICATION</span>
+                    <h2 class="display-5 mb-4">Get In Touch</h2>
+                    <p class="lead-text mb-4">Whether you are booking our 10-seat private tatami room for an intimate celebration or arranging corporate drop-off catering, our hospitality team will respond within 24 hours.</p>
+
+                    <div class="d-flex flex-column gap-3 mb-4">
+                        <div class="p-3 bg-surface rounded-2 border border-secondary border-opacity-10">
+                            <h6 class="text-accent text-uppercase small fw-bold mb-1">Downtown Flagship</h6>
+                            <p class="small text-muted mb-0">123 Artisan Way, NY 10001 &bull; +1 (555) 123-4567<br>downtown@naminoodle.com</p>
+                        </div>
+                        <div class="p-3 bg-surface rounded-2 border border-secondary border-opacity-10">
+                            <h6 class="text-accent text-uppercase small fw-bold mb-1">Westside Counter</h6>
+                            <p class="small text-muted mb-0">89 Ramen Row, NY 10014 &bull; +1 (555) 987-6543<br>westside@naminoodle.com</p>
+                        </div>
+                        <div class="p-3 bg-surface rounded-2 border border-secondary border-opacity-10">
+                            <h6 class="text-accent text-uppercase small fw-bold mb-1">Catering & Event Inquiries</h6>
+                            <p class="small text-muted mb-0">events@naminoodle.com &bull; Mon–Fri 9:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-7 reveal-up">
-                    <div class="bg-surface p-5 rounded-1 shadow-sm">
+
+                <div class="col-lg-7">
+                    <div class="bg-surface p-4 p-md-5 rounded-3 shadow-sm border border-secondary border-opacity-25">
+                        <h4 class="mb-4">Send Us A Message</h4>
                         <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control border-secondary bg-transparent p-3"
-                                        placeholder="Full Name">
+                                    <label class="form-label small fw-bold text-muted">Full Name</label>
+                                    <input type="text" class="form-control border-secondary border-opacity-25 p-3 rounded-2" placeholder="e.g. Kenji Tanaka" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control border-secondary bg-transparent p-3"
-                                        placeholder="Email Address">
+                                    <label class="form-label small fw-bold text-muted">Email Address</label>
+                                    <input type="email" class="form-control border-secondary border-opacity-25 p-3 rounded-2" placeholder="e.g. kenji@example.com" required>
                                 </div>
-                                <div class="col-12">
-                                    <select class="form-select border-secondary bg-transparent p-3">
-                                        <option selected disabled>Order Type</option>
-                                        <option>Group Dine-In</option>
-                                        <option>Takeaway</option>
-                                        <option>Catering</option>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold text-muted">Phone Number</label>
+                                    <input type="tel" class="form-control border-secondary border-opacity-25 p-3 rounded-2" placeholder="e.g. +1 (555) 000-0000">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold text-muted">Enquiry Category</label>
+                                    <select class="form-select border-secondary border-opacity-25 p-3 rounded-2" required>
+                                        <option value="" disabled selected>Select reason...</option>
+                                        <option value="tatami">Private Tatami Room Booking (Up to 10)</option>
+                                        <option value="counter">Full Counter Buyout Event</option>
+                                        <option value="catering">Corporate & Party Catering Drop-off</option>
+                                        <option value="feedback">Dining Feedback / Kitchen Praise</option>
+                                        <option value="press">Press & Media Enquiries</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-secondary bg-transparent p-3" rows="4"
-                                        placeholder="Additional Notes"></textarea>
+                                    <label class="form-label small fw-bold text-muted">Estimated Date / Guest Count (Optional)</label>
+                                    <input type="text" class="form-control border-secondary border-opacity-25 p-3 rounded-2" placeholder="e.g. Friday Nov 14, 8 guests at 7:30 PM">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold text-muted">Your Notes & Specific Requests</label>
+                                    <textarea class="form-control border-secondary border-opacity-25 p-3 rounded-2" rows="4" placeholder="Tell us about your event, dietary requirements, or questions..." required></textarea>
                                 </div>
                                 <div class="col-12 mt-4">
-                                    <button type="button" class="btn btn-premium btn-contact-submit w-100 py-3">Submit
-                                        Enquiry</button>
+                                    <button type="submit" class="btn btn-premium w-100 py-3 fw-bold">Submit Enquiry &rarr;</button>
                                 </div>
                             </div>
                         </form>
+                        <div id="contactSuccessMsg" class="mt-3 p-3 bg-cream text-success fw-bold rounded-2 text-center d-none">
+                            ✓ Arigato! Your message has reached our manager. We will get back to you within 24 hours.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 2.5: Map & FAQ -->
-    <section class="py-5 my-5 border-top border-secondary border-opacity-10 bg-surface">
+    <!-- FAQ Accordion Section -->
+    <section class="py-5 bg-surface border-top border-secondary border-opacity-10" id="faqAccordion">
         <div class="container py-4">
-            <div class="row">
-                <div class="col-12 mb-5">
-                    <div class="bg-surface p-5 rounded-1 shadow-sm">
-                        <h3 class="mb-4 text-center">Find Us</h3>
-                        <div class="rounded overflow-hidden shadow-sm" style="height: 400px;">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450937!2d144.95373531531615!3d-37.817323442021234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sus!4v1611815187768!5m2!1sen!2sus"
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="text-center mb-5">
+                <span class="badge-tag badge-tag-primary mb-2">COMMON QUESTIONS</span>
+                <h3 class="display-5">Frequently Asked Questions</h3>
+                <p class="text-muted small mx-auto" style="max-width: 550px;">Helpful guidelines regarding walk-in policies, reservations, customs, and allergens.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion" id="faqList">
+                        <!-- Q1 -->
+                        <div class="accordion-item bg-transparent border-secondary border-opacity-25 mb-3 rounded-2 overflow-hidden">
+                            <h2 class="accordion-header" id="h1">
+                                <button class="accordion-button bg-surface text-body fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#c1">
+                                    Do you take reservations or is it walk-in only?
+                                </button>
+                            </h2>
+                            <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#faqList">
+                                <div class="accordion-body text-muted">
+                                    We preserve 50% of our cedar counter and dining room for walk-in guests at all times to honor traditional neighborhood noodle shops. For parties of 2 to 6 seeking guaranteed seats, reservations can be placed online through our website. For parties of 7 or larger, please submit a group enquiry via the form above.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="accordion-item bg-transparent border-secondary border-opacity-25 mb-3 rounded-2 overflow-hidden">
+                            <h2 class="accordion-header" id="h2">
+                                <button class="accordion-button collapsed bg-surface text-body fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#c2">
+                                    Do you accommodate vegan or gluten-sensitive diets?
+                                </button>
+                            </h2>
+                            <div id="c2" class="accordion-collapse collapse" data-bs-parent="#faqList">
+                                <div class="accordion-body text-muted">
+                                    Yes! We feature the Kyoto Truffle Kinoko and Spicy Sesame TanTan, both cooked with 100% plant-based kombu and roasted shiitake dashi in dedicated cookware. While our traditional wheat noodles contain gluten, we offer delicate Japanese rice vermicelli noodle substitutes upon request.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="accordion-item bg-transparent border-secondary border-opacity-25 mb-3 rounded-2 overflow-hidden">
+                            <h2 class="accordion-header" id="h3">
+                                <button class="accordion-button collapsed bg-surface text-body fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#c3">
+                                    What is Kaedama and how do I order it?
+                                </button>
+                            </h2>
+                            <div id="c3" class="accordion-collapse collapse" data-bs-parent="#faqList">
+                                <div class="accordion-body text-muted">
+                                    Kaedama is a cherished Fukuoka tradition: ordering an extra serving of hot, freshly boiled noodles to drop straight into your remaining broth. Be sure to leave at least half of your broth in your bowl, and simply ask your server for a "Kaedama" whenever you are ready!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="accordion-item bg-transparent border-secondary border-opacity-25 mb-3 rounded-2 overflow-hidden">
+                            <h2 class="accordion-header" id="h4">
+                                <button class="accordion-button collapsed bg-surface text-body fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#c4">
+                                    Is there parking available near your locations?
+                                </button>
+                            </h2>
+                            <div id="c4" class="accordion-collapse collapse" data-bs-parent="#faqList">
+                                <div class="accordion-body text-muted">
+                                    Both of our locations offer metered street parking and are positioned within a 2-minute walk of commercial parking garages (CityParking on 14th St for Downtown, and Icon Parking on 6th Ave for Westside).
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <section class="py-5" >
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="mb-4 text-center">Frequently Asked Questions</h3>
-                    <div class="p-5 rounded-1 shadow-sm">
-                        <div class="accordion" id="faqAccordion">
-                            <div class="accordion-item bg-transparent border-secondary border-opacity-25 mb-3 rounded">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed bg-transparent text-body fw-bold"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                        aria-expanded="false" aria-controls="collapseOne">
-                                        Do you take reservations?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body text-muted">
-                                        We operate on a walk-in basis for parties of up to 6. For larger groups and
-                                        catering
-                                        enquiries, please use the contact form above.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item bg-transparent border-secondary border-opacity-25 mb-3 rounded">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed bg-transparent text-body fw-bold"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        Do you offer vegetarian/vegan options?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body text-muted">
-                                        Yes! We offer a rich mushroom and kelp-based broth that is 100% plant-based,
-                                        along with
-                                        various vegetable toppings.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item bg-transparent border-secondary border-opacity-25 mb-3 rounded">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed bg-transparent text-body fw-bold"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
-                                        Is there parking available?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body text-muted">
-                                        There is street parking available nearby, as well as a paid public parking
-                                        garage just
-                                        one block away.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- SECTION 3: Footer -->
+
+    <!-- Footer -->
     <footer class="bg-surface pt-5 pb-3 border-top border-secondary border-opacity-25">
         <div class="container pt-5">
             <div class="row mb-5 g-4 text-center text-md-start">
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <a class="navbar-brand d-inline-flex align-items-center gap-2 mb-4 text-decoration-none" href="index.html">
-                        <img src="assets/images/logo.svg" alt="NAMI Noodle Logo" width="40" height="40">
+                        <img src="assets/images/logo.svg" alt="NAMI Noodle Logo" width="38" height="38">
                         <span class="fs-4">NAMI NOODLE</span>
                     </a>
-                    <p class="text-muted pe-lg-4">Crafted Broth × Handmade Noodles × Warm Moments. Experience the art
-                        of premium ramen.</p>
-                    <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-4">
-                        <a href="#" class="text-muted hover-lift social-icon-hover footer-link"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-instagram" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                            </svg></a>
-                        <a href="#" class="text-muted hover-lift social-icon-hover footer-link"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg></a>
-                        <a href="#" class="text-muted hover-lift social-icon-hover footer-link"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
-                            </svg></a>
-                    </div>
+                    <p class="text-muted pe-lg-4">Crafted 18-Hour Broth &bull; Tokyo Night Counter &bull; Izakaya Spirits. Dedicated to authentic ramen artistry in every bowl.</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-2 mb-4 mb-md-0">
                     <h5 class="text-accent mb-4 text-uppercase">Explore</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li><a href="index.html" class="text-muted text-decoration-none footer-link">Home</a></li>
+                        <li><a href="index.html" class="text-muted text-decoration-none footer-link">Home 1</a></li>
+                        <li><a href="home-2.html" class="text-muted text-decoration-none footer-link">Home 2 (Izakaya)</a></li>
                         <li><a href="our-story.html" class="text-muted text-decoration-none footer-link">Our Story</a></li>
                         <li><a href="menu.html" class="text-muted text-decoration-none footer-link">Menu</a></li>
                         <li><a href="gallery.html" class="text-muted text-decoration-none footer-link">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-2 mb-4 mb-md-0">
-                    <h5 class="text-accent mb-4 text-uppercase">Info</h5>
+                    <h5 class="text-accent mb-4 text-uppercase">Guest Services</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li><a href="contact.html" class="text-muted text-decoration-none footer-link">Contact</a></li>
+                        <li><a href="locations.html" class="text-muted text-decoration-none footer-link">Locations & Hours</a></li>
+                        <li><a href="order.html" class="text-muted text-decoration-none footer-link">Order Online</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none footer-link">Reservations</a></li>
+                        <li><a href="contact.html#faqAccordion" class="text-muted text-decoration-none footer-link">Dining FAQs</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <h5 class="text-accent mb-4 text-uppercase">Visit</h5>
+                    <h5 class="text-accent mb-4 text-uppercase">Locations</h5>
                     <ul class="list-unstyled text-muted d-flex flex-column gap-2">
-                        <li>123 Artisan Way</li>
-                        <li>hello@naminoodle.com</li>
+                        <li><strong>Downtown Flagship:</strong> 123 Artisan Way, NY 10001 &bull; (555) 123-4567</li>
+                        <li><strong>Westside Counter:</strong> 89 Ramen Row, NY 10014 &bull; (555) 987-6543</li>
+                        <li><strong>Email:</strong> hello@naminoodle.com</li>
                     </ul>
                 </div>
             </div>
             <div class="border-top border-secondary border-opacity-25 pt-4 mt-5 text-center">
-                <small class="text-muted">&copy; 2026 NAMI Noodle. All rights reserved.</small>
+                <small class="text-muted">&copy; 2026 NAMI Noodle House. All rights reserved.</small>
             </div>
         </div>
     </footer>
@@ -275,6 +260,3 @@
 </body>
 
 </html>
-
-
-

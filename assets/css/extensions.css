@@ -106,3 +106,360 @@ html[data-theme="dark"] .text-muted {
 .text-white .nav-icon-btn {
     color: white;
 }
+
+/* =========================================
+   USER JOURNEY & LUXURY UI EXTENSIONS
+   ========================================= */
+
+/* Hero Quick Badges */
+.hero-badges-wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+}
+
+.hero-badge-pill {
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    color: var(--dark-text);
+}
+
+/* Quick Reservation Bar */
+.reservation-bar-wrapper {
+    margin-top: -45px;
+    position: relative;
+    z-index: 30;
+}
+
+.reservation-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    transition: var(--transition-fast);
+}
+
+html[data-theme="dark"] .reservation-bar {
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.reservation-bar .form-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: var(--muted);
+    margin-bottom: 0.35rem;
+}
+
+.reservation-bar .form-control,
+.reservation-bar .form-select {
+    font-size: 0.92rem;
+    font-weight: 500;
+    border-color: var(--border);
+    background-color: transparent;
+    color: var(--text);
+    padding: 0.65rem 0.85rem;
+    border-radius: 8px;
+}
+
+/* Metric Stats Counter Cards */
+.stat-item {
+    border-right: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+}
+@media (max-width: 768px) {
+    .stat-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+}
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+
+/* Badges */
+.badge-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.35rem 0.75rem;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.badge-tag-primary {
+    background: rgba(143, 45, 45, 0.12);
+    color: var(--primary);
+    border: 1px solid rgba(143, 45, 45, 0.25);
+}
+
+.badge-tag-accent {
+    background: rgba(214, 168, 95, 0.15);
+    color: #9E742C;
+    border: 1px solid rgba(214, 168, 95, 0.35);
+}
+
+html[data-theme="dark"] .badge-tag-accent {
+    color: var(--accent);
+}
+
+.badge-tag-subtle {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--muted);
+    border: 1px solid var(--border);
+}
+
+html[data-theme="dark"] .badge-tag-subtle {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Pulsing Online Status Dot */
+.status-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #2e7d32;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #2e7d32;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.status-dot::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    background-color: #2e7d32;
+    opacity: 0.4;
+    animation: statusPulse 2s infinite ease-out;
+}
+
+@keyframes statusPulse {
+    0% { transform: scale(1); opacity: 0.6; }
+    100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* User Dining Journey 4 Steps */
+.journey-step-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 2.2rem 1.8rem;
+    position: relative;
+    height: 100%;
+    transition: var(--transition-fast);
+}
+
+.journey-step-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.07);
+    border-color: var(--primary);
+}
+
+.step-number-pill {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(143, 45, 45, 0.1);
+    color: var(--primary);
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.journey-step-card:hover .step-number-pill {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* Press & Critic Quotes */
+.press-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.press-quote {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+}
+
+.press-source {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+/* Flavor / Umami Gauge */
+.flavor-meter-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.75rem 0;
+}
+
+.flavor-meter-bar {
+    flex-grow: 1;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+html[data-theme="dark"] .flavor-meter-bar {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.flavor-meter-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
+    border-radius: 4px;
+}
+
+/* Interactive Food Card Overlays */
+.dish-card-img-wrapper {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+}
+
+.dish-card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dish-card-img-wrapper:hover img {
+    transform: scale(1.06);
+}
+
+.dish-badge-overlay {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+}
+
+.dish-price-pill {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(17, 16, 14, 0.85);
+    color: #fff;
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    backdrop-filter: blur(4px);
+    z-index: 2;
+}
+
+/* Cart Float Counter & Interactive Modal */
+.floating-order-bar {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(120%);
+    background: var(--dark-deep);
+    color: #fff;
+    padding: 0.9rem 1.6rem;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 998;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-order-bar.show {
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Location Card Highlight */
+.location-tab-btn {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.location-tab-btn.active,
+.location-tab-btn:hover {
+    background: var(--primary);
+    color: #fff !important;
+    border-color: var(--primary);
+}
+
+/* Timeline in Story */
+.timeline-track {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid var(--accent);
+}
+
+.timeline-milestone {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-milestone::before {
+    content: '';
+    position: absolute;
+    left: -2.45rem;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 3px solid var(--bg);
+}
+

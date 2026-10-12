@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" dir="ltr">
+<html lang="en" data-theme="dark" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAMI Noodle | The Ramen Experience</title>
-    <meta name="description" content="Every bowl has a story. Experience NAMI Noodle.">
+    <title>NAMI Noodle | Night Counter & Tokyo Izakaya</title>
+    <meta name="description" content="Experience midnight broths, open kitchen cedar counters, and artisan izakaya small plates at NAMI Noodle.">
 
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/extensions.css">
@@ -25,188 +24,478 @@
     <nav class="navbar navbar-expand-xl fixed-top navbar-premium text-white bg-dark-deep" id="mainNav">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <img src="assets/images/logo.svg" alt="NAMI Noodle" width="32" height="32">
+                <img src="assets/images/logo.svg" alt="NAMI Noodle" width="34" height="34">
                 <span>NAMI NOODLE</span>
             </a>
             <button class="navbar-toggler border-0 filter-invert" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navC"><span class="navbar-toggler-icon"></span></button>
+                data-bs-target="#navC" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navC">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="home-2.html">Home 2 (Izakaya)</a></li>
                     <li class="nav-item"><a class="nav-link" href="our-story.html">Our Story</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
-                                <div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center gap-3 mt-4 mt-xl-0">
+                <div class="d-flex flex-column flex-xl-row align-items-start align-items-xl-center gap-3 mt-4 mt-xl-0">
                     <div class="d-flex align-items-center gap-3">
-                        <button class="nav-icon-btn" id="theme-toggle" aria-label="Theme">🌙</button>
-                        <button class="nav-icon-btn" id="rtl-toggle" aria-label="RTL">⇄</button>
-                    </div><a href="order.html" class="btn btn-premium">Order Enquiry</a>
+                        <button class="nav-icon-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode">☀️</button>
+                        <button class="nav-icon-btn" id="rtl-toggle" aria-label="Toggle RTL Mode">⇄</button>
+                    </div>
+                    <a href="order.html" class="btn btn-premium">Order Online</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- SECTION 1: Full Background Hero -->
+    <!-- SECTION 1: Immersive Night Hero -->
     <header class="vh-100 position-relative d-flex align-items-center overflow-hidden bg-dark-deep text-white">
         <div class="position-absolute w-100 h-100" style="z-index: 0;">
-            <img src="assets/images/home2-hero.jpg" alt="Hero background"
+            <img src="assets/images/home2-hero.jpg" alt="Night Izakaya and Ramen Hero"
                 class="w-100 h-100 object-fit-cover opacity-50">
         </div>
         <div class="container position-relative z-1">
             <div class="row">
                 <div class="col-lg-10 mx-auto text-center">
                     <div class="reveal-up active hero-content-bg">
-                        <span class="text-accent fw-bold text-uppercase mb-3 d-block" style="letter-spacing: 3px;">The
-                            Ramen Experience</span>
-                        <h1 class="display-1 fw-bold mb-4 text-white">Every Bowl<br>Has A Story.</h1>
-                        <p class="lead-text mb-4 text-white">Experience our carefully crafted ramen, where tradition
-                            meets innovation.</p>
-                        <a href="menu.html" class="btn btn-premium mt-3">Discover the Menu</a>
+                        <div class="hero-badges-wrapper mb-4">
+                            <span class="hero-badge-pill">🏮 Tokyo Midnight Counter</span>
+                            <span class="text-white-50">•</span>
+                            <span class="hero-badge-pill">🍶 Rare Junmai Sake Selection</span>
+                            <span class="text-white-50">•</span>
+                            <span class="hero-badge-pill">🥢 Open Kitchen Counter</span>
+                        </div>
+                        <h1 class="display-1 fw-bold mb-4 text-white">Midnight Broth.<br><span class="text-accent">Sizzling Izakaya.</span></h1>
+                        <p class="lead-text mb-4 text-white mx-auto" style="max-width: 680px;">When dusk falls over the city, the stockpots reach their deepest point of extraction. Pull up a stool at our cedar counter for smoky skewers, chilled sake, and transcendent bowls of ramen.</p>
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a href="#night-counter" class="btn btn-premium px-5 py-3">Reserve Counter Stool</a>
+                            <a href="menu.html" class="btn btn-outline-premium text-white border-white px-5 py-3">Discover Night Menu</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- SECTION 1.5: Extra Section -->
-    <section class="py-5 bg-dark-premium text-white text-center">
-        <div class="container py-4 reveal-up">
-            <h2 class="display-6 mb-3 text-primary">Crafting Perfection Daily</h2>
-            <p class="lead text-white mx-auto" style="max-width: 600px;">Every bowl is a testament to our dedication. We
-                source the finest local ingredients to bring authentic flavors straight to your table.</p>
+    <!-- SECTION 1.5: Night Reservation Bar -->
+    <section class="reservation-bar-wrapper" id="night-counter">
+        <div class="container">
+            <div class="reservation-bar reveal-up active">
+                <form id="nightReservationForm" class="row g-3 align-items-end">
+                    <div class="col-md-3">
+                        <label class="form-label" for="nightSeating">Experience Zone</label>
+                        <select class="form-select" id="nightSeating" required>
+                            <option value="counter" selected>14-Seat Chef's Cedar Counter</option>
+                            <option value="booth">Lantern-Lit Private Booth</option>
+                            <option value="tatami">Traditional Tatami Room (Groups)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <label class="form-label" for="nightDate">Date</label>
+                        <input type="date" class="form-control" id="nightDate" value="2026-10-15" required>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <label class="form-label" for="nightTime">Seating Window</label>
+                        <select class="form-select" id="nightTime" required>
+                            <option value="17:30">05:30 PM (Early Twilight)</option>
+                            <option value="19:00" selected>07:00 PM (Prime Dinner)</option>
+                            <option value="20:45">08:45 PM (Izakaya Session)</option>
+                            <option value="22:15">10:15 PM (Midnight Bowls)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <label class="form-label" for="nightParty">Party Size</label>
+                        <select class="form-select" id="nightParty" required>
+                            <option value="1">1 Guest (Solo Stool)</option>
+                            <option value="2" selected>2 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="6">6 Guests</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <button type="submit" class="btn btn-premium w-100 py-2 py-md-3">Confirm Seating</button>
+                    </div>
+                </form>
+                <div id="nightFeedback" class="mt-3 text-center text-success fw-bold d-none">
+                    ✓ Counter seat held for you! Redirecting to confirm contact details...
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- SECTION 2: The Broth Collection -->
+    <!-- SECTION 2: The Master Counter Experience -->
+    <section class="py-5 my-5">
+        <div class="container py-4">
+            <div class="row align-items-center reveal-up">
+                <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+                    <span class="badge-tag badge-tag-accent mb-2">OMAKASE & COUNTER SEATING</span>
+                    <h2 class="display-4 mb-4">Front Row To Culinary Mastery</h2>
+                    <p class="lead-text mb-4">In Tokyo, the true heart of the ramen experience beats at the counter. Here, there are no partitions between chef and diner—only the sizzle of torch-seared pork chashu, the vigorous snap of noodles leaving hot baskets, and the deep aroma of boiling tare.</p>
+                    <p class="text-muted mb-4">Our master chefs cook directly before your eyes, timing each bowl to be enjoyed within 15 seconds of plating to preserve optimal broth heat and noodle springiness.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="gallery.html" class="btn btn-outline-premium">Take A Visual Tour</a>
+                        <a href="contact.html" class="btn btn-premium">Book Counter For Group</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative hover-lift">
+                        <img src="assets/images/chef-master.jpg" alt="Master ramen chef at NAMI Noodle cedar counter"
+                            class="img-fluid rounded-2 shadow-lg w-100" style="max-height: 500px; object-fit: cover;">
+                        <div class="position-absolute bottom-0 start-0 m-4 p-3 bg-dark-deep text-white rounded-2 bg-opacity-75 backdrop-blur d-none d-sm-block">
+                            <span class="text-accent fw-bold small text-uppercase d-block">Open Kitchen</span>
+                            <span class="fw-bold">14 Stools &bull; Direct Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: The Broth Collection (Expanded) -->
     <section class="py-5 bg-surface overflow-hidden">
         <div class="container py-5 reveal-up">
-            <h2 class="display-5 mb-5 text-center">The Broth Collection</h2>
-            <div class="row g-0 align-items-center mb-5 hover-lift">
-                <div class="col-md-6 order-2 order-md-1 p-5">
-                    <h3 class="display-6 mb-3">01. Shiromaru Classic</h3>
-                    <p class="lead-text">Our original tonkotsu broth served with ultra-thin noodles, pork belly chashu,
-                        sesame, and scallions. A milky, rich, and comforting masterpiece.</p>
+            <div class="text-center mb-5">
+                <span class="badge-tag badge-tag-primary mb-2">HERITAGE SELECTION</span>
+                <h2 class="display-4 mb-2">The Night Broth Collection</h2>
+                <p class="lead-text mx-auto" style="max-width: 620px;">Four distinct master bowls, each formulated with dedicated noodles, proprietary tare sauce, and bespoke fat emulsions.</p>
+            </div>
+
+            <!-- Broth 1 -->
+            <div class="row g-0 align-items-center mb-5 bg-surface rounded-3 border border-secondary border-opacity-10 overflow-hidden hover-lift">
+                <div class="col-md-6 order-2 order-md-1 p-4 p-lg-5">
+                    <span class="badge-tag badge-tag-primary mb-3">ORIGINAL MASTERPIECE</span>
+                    <h3 class="display-6 mb-3">01. Shiromaru Midnight Classic</h3>
+                    <p class="lead-text mb-3">Our foundational 18-hour tonkotsu broth, served with ultra-thin Hakata-style wheat noodles, slow-braised pork belly chashu, toasted sesame, fresh wood ear mushrooms, and fragrant green scallions.</p>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge-tag badge-tag-subtle">18-Hour Extraction</span>
+                        <span class="badge-tag badge-tag-subtle">Thin Noodles</span>
+                        <span class="badge-tag badge-tag-subtle">Velvety Mouthfeel</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="fs-4 fw-bold text-primary">$18.00</span>
+                        <a href="order.html?item=shiromaru" class="btn btn-premium btn-sm px-4">Order Tonight</a>
+                    </div>
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
-                    <img src="assets/images/collection1.jpg" alt="" class="img-fluid">
+                    <img src="assets/images/collection1.jpg" alt="Shiromaru Midnight Classic" class="img-fluid w-100" style="height: 380px; object-fit: cover;">
                 </div>
             </div>
-            <div class="row g-0 align-items-center hover-lift">
-                <div class="col-md-6">
-                    <img src="assets/images/collection2.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-6 p-5">
-                    <h3 class="display-6 mb-3">02. Akamaru Modern</h3>
-                    <p class="lead-text">A bolder translation of the original pork broth, enhanced with special blended
-                        miso paste and fragrant garlic oil.</p>
-                </div>
 
+            <!-- Broth 2 -->
+            <div class="row g-0 align-items-center mb-5 bg-surface rounded-3 border border-secondary border-opacity-10 overflow-hidden hover-lift">
+                <div class="col-md-6">
+                    <img src="assets/images/collection2.jpg" alt="Akamaru Modern Black Garlic" class="img-fluid w-100" style="height: 380px; object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-4 p-lg-5">
+                    <span class="badge-tag badge-tag-accent mb-3">BOLD & SMOKY</span>
+                    <h3 class="display-6 mb-3">02. Akamaru Modern Garlic</h3>
+                    <p class="lead-text mb-3">A dramatic modern evolution of our pork bone soup, elevated with house-blended aged red miso paste, scorched mayu black garlic oil, torch-seared pork chashu, and fragrant Sansho pepper.</p>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge-tag badge-tag-subtle">Charred Mayu Oil</span>
+                        <span class="badge-tag badge-tag-subtle">Firm Chewy Noodles</span>
+                        <span class="badge-tag badge-tag-subtle">Smoky Depth</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="fs-4 fw-bold text-primary">$19.50</span>
+                        <a href="order.html?item=black-garlic" class="btn btn-premium btn-sm px-4">Order Tonight</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Broth 3 -->
+            <div class="row g-0 align-items-center mb-5 bg-surface rounded-3 border border-secondary border-opacity-10 overflow-hidden hover-lift">
+                <div class="col-md-6 order-2 order-md-1 p-4 p-lg-5">
+                    <span class="badge-tag badge-tag-primary mb-3">SPICY SENSATION</span>
+                    <h3 class="display-6 mb-3">03. Spicy Fire-Roasted TanTan</h3>
+                    <p class="lead-text mb-3">A fiery dance of house-made toasted chili oil, stone-ground sesame paste, wok-fried Berkshire spicy pork crumble, crunchy bok choy, and crispy garlic chips in deep chicken-pork broth.</p>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge-tag badge-tag-subtle">Roasted Sesame</span>
+                        <span class="badge-tag badge-tag-subtle">Wavy Noodles</span>
+                        <span class="badge-tag badge-tag-subtle">Fiery Heat</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="fs-4 fw-bold text-primary">$18.50</span>
+                        <a href="order.html?item=spicy-miso" class="btn btn-premium btn-sm px-4">Order Tonight</a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <img src="assets/images/menu3.jpg" alt="Spicy Fire-Roasted TanTan" class="img-fluid w-100" style="height: 380px; object-fit: cover;">
+                </div>
+            </div>
+
+            <!-- Broth 4 -->
+            <div class="row g-0 align-items-center bg-surface rounded-3 border border-secondary border-opacity-10 overflow-hidden hover-lift">
+                <div class="col-md-6">
+                    <img src="assets/images/menu4.jpg" alt="Kyoto Truffle Kinoko" class="img-fluid w-100" style="height: 380px; object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-4 p-lg-5">
+                    <span class="badge-tag badge-tag-accent mb-3">VEGAN UMAMI</span>
+                    <h3 class="display-6 mb-3">04. Kyoto Truffle Kinoko</h3>
+                    <p class="lead-text mb-3">Slow-extracted kombu kelp and roasted shiitake mushroom dashi, enriched with Umbrian black truffle essence, pan-seared silky tofu, pickled menma, and crispy lotus root.</p>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="badge-tag badge-tag-subtle">100% Plant-Based</span>
+                        <span class="badge-tag badge-tag-subtle">Wild Mushrooms</span>
+                        <span class="badge-tag badge-tag-subtle">Aromatic Truffle</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="fs-4 fw-bold text-primary">$17.50</span>
+                        <a href="order.html?item=truffle-kinoko" class="btn btn-premium btn-sm px-4">Order Tonight</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 3: Made With Intention -->
+    <!-- SECTION 4: Made With Intention (The 4 Scientific Stages) -->
     <section class="py-5">
         <div class="container py-5 reveal-up text-center">
-            <h2 class="display-5 mb-5">Made With Intention</h2>
+            <span class="badge-tag badge-tag-accent mb-2">PRECISION & METHOD</span>
+            <h2 class="display-4 mb-3">Made With Intention</h2>
+            <p class="lead-text mx-auto mb-5" style="max-width: 600px;">Every step in our kitchen is calibrated to the second and degree. Consistency is how we achieve excellence day after day.</p>
+            
             <div class="row g-4 justify-content-center">
-                <div class="col-sm-6 col-md-3">
-                    <div
-                        class="bg-surface p-4 rounded-3 shadow-sm h-100 hover-lift border border-secondary border-opacity-10">
-                        <h1 class="display-4 text-primary mb-2">01</h1>
-                        <h4 class="mb-0">Prep</h4>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="journey-step-card text-start">
+                        <div class="step-number-pill">01</div>
+                        <h4 class="mb-2">Prep & Sourcing</h4>
+                        <p class="text-muted small mb-0">Berkshire pork bones blanched twice to purge impurities. 2-year aged kombu steeped in cold filtered spring water overnight.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div
-                        class="bg-surface p-4 rounded-3 shadow-sm h-100 hover-lift border border-secondary border-opacity-10">
-                        <h1 class="display-4 text-primary mb-2">02</h1>
-                        <h4 class="mb-0">Boil</h4>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="journey-step-card text-start">
+                        <div class="step-number-pill">02</div>
+                        <h4 class="mb-2">18-Hour Boil</h4>
+                        <p class="text-muted small mb-0">Vigorous thermal convection extracts collagen and marrow, transforming water and bone into a rich, silky emulsion.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div
-                        class="bg-surface p-4 rounded-3 shadow-sm h-100 hover-lift border border-secondary border-opacity-10">
-                        <h1 class="display-4 text-primary mb-2">03</h1>
-                        <h4 class="mb-0">Pour</h4>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="journey-step-card text-start">
+                        <div class="step-number-pill">03</div>
+                        <h4 class="mb-2">45-Sec Pull</h4>
+                        <p class="text-muted small mb-0">Noodles dropped in boiling kettles and strained with a crisp wrist snap to completely shed excess starch water.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
-                    <div
-                        class="bg-surface p-4 rounded-3 shadow-sm h-100 hover-lift border border-secondary border-opacity-10">
-                        <h1 class="display-4 text-primary mb-2">04</h1>
-                        <h4 class="mb-0">Serve</h4>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="journey-step-card text-start">
+                        <div class="step-number-pill">04</div>
+                        <h4 class="mb-2">Immediate Pour</h4>
+                        <p class="text-muted small mb-0">Piped boiling broth over preheated ceramic bowls. Plated with torched chashu and served to your seat within 12 seconds.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 4: Our House -->
-    <section class="py-5 bg-dark-premium text-white">
+    <!-- SECTION 5: Sizzling Izakaya Starters & Small Plates -->
+    <section class="py-5 bg-surface">
+        <div class="container py-5 reveal-up">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-8">
+                    <span class="badge-tag badge-tag-primary mb-2">IZAKAYA COMPANIONS</span>
+                    <h2 class="display-4 mb-2">Small Plates That Set The Stage</h2>
+                    <p class="lead-text mb-0">Before your steaming bowl arrives, share our sizzling snacks designed to complement chilled beers and sakes.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="menu.html?filter=starters" class="btn btn-outline-premium">View All Starters &rarr;</a>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 bg-surface rounded-3 overflow-hidden shadow-sm h-100 hover-lift">
+                        <img src="assets/images/izakaya-starters.jpg" alt="Pan-fried gyoza and karaage chicken" class="w-100" style="height: 320px; object-fit: cover;">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0">Crispy Pork Gyoza & Karaage</h4>
+                                <span class="fs-5 fw-bold text-primary">$12</span>
+                            </div>
+                            <p class="text-muted small mb-3">Six pan-crisped pork and garlic chive dumplings with dipping tare, alongside double-fried thigh karaage tossed in sea salt and shichimi pepper.</p>
+                            <span class="badge-tag badge-tag-subtle">Crowd Favorite Starter</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 bg-surface rounded-3 overflow-hidden shadow-sm h-100 hover-lift">
+                        <img src="assets/images/sake-pairings.jpg" alt="Sake pairing set and highball" class="w-100" style="height: 320px; object-fit: cover;">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h4 class="mb-0">Niigata Junmai Sake & Tokyo Highball</h4>
+                                <span class="fs-5 fw-bold text-primary">$14</span>
+                            </div>
+                            <p class="text-muted small mb-3">Dry, crisp cold sake in traditional ceramic ochoko carafes that cut through rich pork fat, or cedar-smoked whisky highballs garnished with fragrant shiso leaf.</p>
+                            <span class="badge-tag badge-tag-subtle">Master Sommelier Pairing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: Seasonal Feature Bowls (Real, Distinct Offerings) -->
+    <section class="py-5 text-center">
+        <div class="container py-5 reveal-up">
+            <span class="badge-tag badge-tag-accent mb-2">LIMITED DAILY ALLOTMENT</span>
+            <h2 class="display-4 mb-3">Seasonal Chef's Specials</h2>
+            <p class="lead-text mx-auto mb-5" style="max-width: 600px;">Exclusive recipes developed each quarter by Chef Kenjiro, limited to 30 bowls per service.</p>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Seasonal 1 -->
+                <div class="col-md-4">
+                    <div class="card bg-surface border border-secondary border-opacity-10 rounded-3 p-4 hover-lift h-100">
+                        <img src="assets/images/ramen.jpg" class="rounded-circle mb-3 mx-auto shadow-sm"
+                            style="width: 160px; height: 160px; object-fit: cover;" alt="Yuzu Shio Golden Bowl">
+                        <span class="badge-tag badge-tag-accent align-self-center mb-2">Winter Feature</span>
+                        <h4 class="mb-2">Yuzu Shio Golden Bowl</h4>
+                        <p class="text-muted small mb-3">Clear, sparkling chicken dashi infused with fresh Kochi yuzu citrus, slow-cooked tender chicken chashu, and fragrant mitsuba greens.</p>
+                        <div class="mt-auto">
+                            <span class="fw-bold fs-5 text-primary d-block mb-3">$19.00</span>
+                            <a href="order.html?item=yuzu" class="btn btn-outline-premium btn-sm w-100">Order Seasonal</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seasonal 2 -->
+                <div class="col-md-4">
+                    <div class="card bg-surface border border-secondary border-opacity-10 rounded-3 p-4 hover-lift h-100">
+                        <img src="assets/images/menu2.jpg" class="rounded-circle mb-3 mx-auto shadow-sm"
+                            style="width: 160px; height: 160px; object-fit: cover;" alt="Tokyo Shoyu Chashu Royale">
+                        <span class="badge-tag badge-tag-primary align-self-center mb-2">Chef Collaboration</span>
+                        <h4 class="mb-2">Shoyu Chashu Royale</h4>
+                        <p class="text-muted small mb-3">Deep soy broth topped with a triple-cut protein flight: flame-torched pork belly, slow-braised shoulder kakuni, and sous-vide duck breast.</p>
+                        <div class="mt-auto">
+                            <span class="fw-bold fs-5 text-primary d-block mb-3">$21.00</span>
+                            <a href="order.html?item=shoyu-royale" class="btn btn-outline-premium btn-sm w-100">Order Seasonal</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Seasonal 3 -->
+                <div class="col-md-4">
+                    <div class="card bg-surface border border-secondary border-opacity-10 rounded-3 p-4 hover-lift h-100">
+                        <img src="assets/images/menu6.jpg" class="rounded-circle mb-3 mx-auto shadow-sm"
+                            style="width: 160px; height: 160px; object-fit: cover;" alt="Hokkaido Butter Corn Miso">
+                        <span class="badge-tag badge-tag-accent align-self-center mb-2">Hokkaido Regional</span>
+                        <h4 class="mb-2">Butter Corn Red Miso</h4>
+                        <p class="text-muted small mb-3">Earthy red miso broth topped with sweet roasted corn kernels, a slab of organic Hokkaido churned butter, and tender spicy ground pork.</p>
+                        <div class="mt-auto">
+                            <span class="fw-bold fs-5 text-primary d-block mb-3">$19.50</span>
+                            <a href="order.html?item=butter-miso" class="btn btn-outline-premium btn-sm w-100">Order Seasonal</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: Our House & Spatial Architecture -->
+    <section class="py-5 bg-surface">
         <div class="container py-5 reveal-up">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="assets/images/house.jpg" alt="Interior" class="img-fluid rounded shadow-lg">
+                    <img src="assets/images/house.jpg" alt="Interior of NAMI Noodle House" class="img-fluid rounded-2 shadow-lg w-100" style="max-height: 480px; object-fit: cover;">
                 </div>
                 <div class="col-lg-6 ps-lg-5 text-center text-lg-start">
-                    <h2 class="display-5 text-white mb-4">Our House</h2>
-                    <p class="text-white-50 lead">Inspired by classic izakayas, designed for modern comfort. Experience
-                        the warmth of wood, open kitchens, and true hospitality.</p>
-                    <a href="gallery.html" class="btn btn-premium mt-3 text-uppercase fw-bold"
-                        style="letter-spacing: 1px;">View Gallery &rarr;</a>
+                    <span class="badge-tag badge-tag-accent mb-2">IZAKAYA ARCHITECTURE</span>
+                    <h2 class="display-4 mb-4">Crafted Wood, Lantern Glow, Genuine Hospitality</h2>
+                    <p class="lead-text mb-4">Inspired by historic alleyway ramen joints in Shinjuku and refined with clean Scandinavian-Japanese minimalism. We designed every booth, counter chair, and light fixture to provide warmth, intimacy, and unhurried dining.</p>
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-4 text-start">
+                        <li class="d-flex align-items-center gap-2"><span class="text-accent fw-bold">&#x2714;</span> <strong>The Cedar Counter:</strong> Solo and pair seating directly facing the master stockpots.</li>
+                        <li class="d-flex align-items-center gap-2"><span class="text-accent fw-bold">&#x2714;</span> <strong>The Lantern Booths:</strong> Intimate dining for groups of 2 to 4 guests.</li>
+                        <li class="d-flex align-items-center gap-2"><span class="text-accent fw-bold">&#x2714;</span> <strong>The Private Tatami Room:</strong> Secluded banquets for up to 10 guests with specialized omakase menus.</li>
+                    </ul>
+                    <a href="gallery.html" class="btn btn-premium text-uppercase fw-bold">Explore Photo Gallery &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 5: Seasonal Bowls (Testimonials replacement) -->
-    <section class="py-5 bg-surface text-center">
-        <div class="container py-5 reveal-up">
-            <h2 class="display-5 mb-5">Seasonal Features</h2>
-            <p class="lead-text mx-auto mb-5" style="max-width: 600px;">Exclusive limited-time bowls inspired by the
-                current season's freshest ingredients. (Sample Content)</p>
-            <div class="row justify-content-center">
+    <!-- SECTION 8: What Diners Say (Testimonial Grid) -->
+    <section class="py-5 my-4">
+        <div class="container py-4 reveal-up">
+            <div class="text-center mb-5">
+                <span class="badge-tag badge-tag-primary mb-2">COMMUNITY LOVE</span>
+                <h2 class="display-4">Words From The Counter</h2>
+                <p class="lead-text mx-auto" style="max-width: 600px;">Every day we are humbled by guests who consider NAMI their home away from home.</p>
+            </div>
+
+            <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card bg-transparent border-0 hover-lift">
-                        <img src="assets/images/ramen.jpg" class="rounded-circle mb-3 mx-auto shadow-sm"
-                            style="width: 150px; height: 150px; object-fit: cover;" alt="Yuzu Shio Ramen">
-                        <h4 class="mb-2">Yuzu Shio Ramen</h4>
-                        <p class="text-muted small">Bright citrus salt broth, spring chicken.</p>
+                    <div class="press-card hover-lift">
+                        <div>
+                            <div class="text-accent fs-5 mb-2">★★★★★</div>
+                            <p class="press-quote">"The Akamaru Modern with the black garlic oil is an outer-body experience. Pairing it with the smoked highball makes for the best Friday night in the city."</p>
+                        </div>
+                        <div>
+                            <strong class="d-block text-primary">Marcus Vance</strong>
+                            <small class="text-muted">Verified Diner &bull; Downtown Flagship</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="press-card hover-lift">
+                        <div>
+                            <div class="text-accent fs-5 mb-2">★★★★★</div>
+                            <p class="press-quote">"As someone who lived in Fukuoka for five years, NAMI is the only spot in town that gets the noodle chew and broth depth 100% authentic."</p>
+                        </div>
+                        <div>
+                            <strong class="d-block text-primary">Emi Takahashi</strong>
+                            <small class="text-muted">Verified Diner &bull; Westside Counter</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="press-card hover-lift">
+                        <div>
+                            <div class="text-accent fs-5 mb-2">★★★★★</div>
+                            <p class="press-quote">"The staff is deeply welcoming, the atmosphere is cozy and moody, and the gyoza starters are just pure perfection before the ramen."</p>
+                        </div>
+                        <div>
+                            <strong class="d-block text-primary">David Chen</strong>
+                            <small class="text-muted">Verified Diner &bull; Downtown Flagship</small>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 6: Footer -->
+    <!-- SECTION 9: Late Night Counter Call to Action -->
+    <section class="py-5 bg-surface text-center">
+        <div class="container py-4 reveal-up">
+            <span class="badge-tag badge-tag-accent mb-3">EXPERIENCE TONIGHT</span>
+            <h2 class="display-5 mb-3">Your Stool At The Counter Is Waiting</h2>
+            <p class="lead-text mx-auto mb-4" style="max-width: 650px;">Walk-ins are always welcomed at our counters. For guaranteed seating during peak weekend hours, secure your reservation in advance.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="#night-counter" class="btn btn-premium px-5 py-3">Book Your Seat Now</a>
+                <a href="order.html" class="btn btn-outline-premium px-5 py-3">Order Delivery / Pickup</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: Footer -->
     <footer class="bg-surface pt-5 pb-3 border-top border-secondary border-opacity-25">
         <div class="container pt-5">
             <div class="row mb-5 g-4 text-center text-md-start">
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
                     <a class="navbar-brand d-inline-flex align-items-center gap-2 mb-4 text-decoration-none" href="index.html">
-                        <img src="assets/images/logo.svg" alt="NAMI Noodle Logo" width="40" height="40">
+                        <img src="assets/images/logo.svg" alt="NAMI Noodle Logo" width="38" height="38">
                         <span class="fs-4">NAMI NOODLE</span>
                     </a>
-                    <p class="text-muted pe-lg-4">Crafted Broth × Handmade Noodles × Warm Moments. Experience the art
-                        of premium ramen.</p>
+                    <p class="text-muted pe-lg-4">Crafted 18-Hour Broth &bull; Tokyo Night Counter &bull; Izakaya Spirits. Authentic ramen artistry served daily with true omotenashi hospitality.</p>
                     <div class="d-flex gap-3 justify-content-center justify-content-md-start mt-4">
-                        <a href="#" class="text-muted hover-lift social-icon-hover footer-link"><svg
+                        <a href="https://instagram.com" target="_blank" class="text-muted hover-lift social-icon-hover footer-link" aria-label="Instagram"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-instagram" viewBox="0 0 16 16">
                                 <path
                                     d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
                             </svg></a>
-                        <a href="#" class="text-muted hover-lift social-icon-hover footer-link"><svg
+                        <a href="https://facebook.com" target="_blank" class="text-muted hover-lift social-icon-hover footer-link" aria-label="Facebook"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-facebook" viewBox="0 0 16 16">
                                 <path
                                     d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                             </svg></a>
-                        <a href="#" class="text-muted hover-lift social-icon-hover footer-link"><svg
+                        <a href="https://twitter.com" target="_blank" class="text-muted hover-lift social-icon-hover footer-link" aria-label="X / Twitter"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-twitter-x" viewBox="0 0 16 16">
                                 <path
@@ -217,28 +506,33 @@
                 <div class="col-12 col-md-6 col-lg-2 mb-4 mb-md-0">
                     <h5 class="text-accent mb-4 text-uppercase">Explore</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li><a href="index.html" class="text-muted text-decoration-none footer-link">Home</a></li>
+                        <li><a href="index.html" class="text-muted text-decoration-none footer-link">Home 1</a></li>
+                        <li><a href="home-2.html" class="text-muted text-decoration-none footer-link">Home 2 (Izakaya)</a></li>
                         <li><a href="our-story.html" class="text-muted text-decoration-none footer-link">Our Story</a></li>
-                        <li><a href="menu.html" class="text-muted text-decoration-none footer-link">Menu</a></li>
+                        <li><a href="menu.html" class="text-muted text-decoration-none footer-link">Full Menu</a></li>
                         <li><a href="gallery.html" class="text-muted text-decoration-none footer-link">Gallery</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-2 mb-4 mb-md-0">
-                    <h5 class="text-accent mb-4 text-uppercase">Info</h5>
+                    <h5 class="text-accent mb-4 text-uppercase">Guest Services</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li><a href="contact.html" class="text-muted text-decoration-none footer-link">Contact</a></li>
+                        <li><a href="locations.html" class="text-muted text-decoration-none footer-link">Locations & Hours</a></li>
+                        <li><a href="order.html" class="text-muted text-decoration-none footer-link">Order Online</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none footer-link">Reservations</a></li>
+                        <li><a href="contact.html#faqAccordion" class="text-muted text-decoration-none footer-link">Dining FAQs</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <h5 class="text-accent mb-4 text-uppercase">Visit</h5>
+                    <h5 class="text-accent mb-4 text-uppercase">Night Houses</h5>
                     <ul class="list-unstyled text-muted d-flex flex-column gap-2">
-                        <li>123 Artisan Way</li>
-                        <li>hello@naminoodle.com</li>
+                        <li><strong>Downtown Flagship:</strong> 123 Artisan Way, NY 10001 &bull; Open Until 11:00 PM</li>
+                        <li><strong>Westside Counter:</strong> 89 Ramen Row, NY 10014 &bull; Open Until 10:00 PM</li>
+                        <li><strong>Direct Line:</strong> +1 (555) 123-4567</li>
                     </ul>
                 </div>
             </div>
             <div class="border-top border-secondary border-opacity-25 pt-4 mt-5 text-center">
-                <small class="text-muted">&copy; 2026 NAMI Noodle. All rights reserved.</small>
+                <small class="text-muted">&copy; 2026 NAMI Noodle House. All rights reserved. Tokyo Night Counter &bull; Izakaya Spirits.</small>
             </div>
         </div>
     </footer>
@@ -249,5 +543,3 @@
 </body>
 
 </html>
-
-
