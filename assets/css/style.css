@@ -573,4 +573,406 @@ html[data-theme='dark'] .form-select option {
     .navbar-collapse .navbar-brand {
         color: var(--text) !important;
     }
-}
+}
+
+/* =========================================================
+   CLIENT REVIEW FIXES — RESPONSIVE POLISH & ACCESSIBILITY
+   ========================================================= */
+:root { --review-hero-height: clamp(390px, 46vw, 620px); }
+.btn-premium, .btn-outline-premium, .nav-icon-btn, #theme-toggle, #rtl-toggle {
+    min-height: 44px;
+    border-radius: 6px;
+}
+.nav-icon-btn, #theme-toggle, #rtl-toggle {
+    width: 44px; height: 44px; min-width: 44px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(36,31,27,.2);
+    background: var(--cream); color: var(--dark-deep);
+    padding: 0; line-height: 1;
+}
+.navbar-premium { padding: 15px 0; background: var(--surface); }
+.navbar-premium.scrolled { padding: 12px 0; }
+.navbar-premium .btn-premium { min-height: 44px; padding: 10px 20px; }
+.navbar-premium .nav-link { white-space: nowrap; }
+.page-hero {
+    min-height: var(--review-hero-height);
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 0 !important;
+    padding: clamp(48px, 7vw, 88px) 0 !important;
+}
+.page-hero > .container { width: 100%; }
+.page-hero .hero-content-bg {
+    max-width: 960px;
+    margin-inline: auto;
+    padding: clamp(18px, 3vw, 34px);
+    border-radius: 12px;
+    background: rgba(20, 16, 13, .68);
+    border: 1px solid rgba(255,255,255,.18);
+    box-shadow: 0 16px 50px rgba(0,0,0,.16);
+}
+.page-hero .badge-tag, .page-hero .hero-badge-pill,
+.hero-badges-wrapper .hero-badge-pill,
+.masonry-overlay .badge-tag, .gallery-story-label span {
+    background: #fff3d8 !important;
+    color: #57201f !important;
+    border: 1px solid rgba(87,32,31,.24);
+    font-weight: 700;
+}
+.hero-badge-pill { display: inline-flex; align-items: center; margin: 3px 2px; padding: 7px 12px; border-radius: 999px; }
+header.vh-100 { min-height: clamp(570px, 78vh, 790px); height: auto !important; padding: 90px 0 44px; }
+header.vh-100 .hero-content-bg {
+    max-width: 920px; margin-inline: auto; padding: clamp(14px, 2.5vw, 28px);
+    border-radius: 14px; background: rgba(17,16,14,.52);
+}
+header.vh-100 .lead-text, header.vh-100 .lead { color: #fff !important; }
+.reservation-bar-wrapper { position: relative; z-index: 2; }
+.reservation-bar-wrapper .container, .reservation-bar-wrapper .row { min-width: 0; }
+.reservation-bar-wrapper .card, .reservation-bar-wrapper form { max-width: 100%; }
+.btn-premium, .btn-outline-premium { white-space: normal; text-align: center; }
+section .d-flex > .btn-premium, section .d-flex > .btn-outline-premium { min-height: 48px; }
+.explore-link { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; }
+.about-detail-card {
+    padding: 18px; background: var(--cream); border: 1px solid var(--border);
+    border-radius: 10px; box-shadow: 0 8px 24px rgba(27,23,20,.05);
+}
+.about-detail-card img { width: 100%; height: 170px; object-fit: cover; border-radius: 7px; margin-bottom: 18px; }
+.about-detail-card h3 { font-size: 21px; }
+.about-detail-card p { color: var(--muted); margin-bottom: 0; }
+.community-love-image { max-width: 900px; margin-inline: auto; }
+.community-love-image img { width: 100%; height: clamp(180px, 30vw, 330px); object-fit: cover; border-radius: 12px; display: block; }
+.gallery-story-label {
+    height: 100%; min-height: 108px; padding: 16px; border: 1px solid var(--border);
+    background: var(--surface); border-radius: 8px; display: flex; flex-direction: column; gap: 5px;
+}
+.gallery-story-label span { width: fit-content; border-radius: 999px; padding: 2px 9px; font-size: 11px; }
+.gallery-story-label strong { color: var(--text); font-size: 14px; }
+.gallery-story-label small { color: var(--muted); }
+.masonry-overlay .badge-tag { opacity: 1; text-shadow: none; }
+.masonry-item:hover .masonry-overlay { background: linear-gradient(0deg, rgba(17,16,14,.95), rgba(17,16,14,.15)); }
+.masonry-item:hover .masonry-overlay .badge-tag { background: #fff3d8 !important; color: #57201f !important; }
+#menu-filters, #gallery-filters {
+    position: sticky; top: 76px; z-index: 30;
+    padding: 12px 0; background: var(--surface);
+}
+#menu-filters { margin: -1px 0; }
+#menu-filters .filter-btn, #gallery-filters .gallery-filter-btn { min-height: 40px; }
+#menu-filters .filter-btn, .gallery-filter-btn { flex: 0 0 auto; }
+.menu-item img, .menu-item .card-img-top { object-fit: cover; }
+footer .footer-visit-details { color: var(--muted); font-size: 14px; line-height: 1.8; }
+footer .footer-visit-details a { color: inherit; text-decoration: none; }
+footer .footer-visit-details a:hover { color: var(--primary); }
+html[dir="rtl"] .nav-link::after { transform-origin: left; }
+html[dir="rtl"] .about-detail-card, html[dir="rtl"] .gallery-story-label { text-align: right; }
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .navbar-premium .container { max-width: 100%; padding-inline: 20px; }
+    .navbar-brand { font-size: 20px; }
+    .navbar-premium .nav-link { padding: 8px 9px !important; font-size: 11px; letter-spacing: .4px; }
+    .navbar-premium .navbar-collapse > .d-flex { gap: 10px !important; }
+    .navbar-premium .btn-premium { padding: 9px 12px; font-size: 11px; }
+    .hero-content-bg { max-width: 100%; }
+    .row.align-items-center > [class*="col-"] { min-width: 0; }
+    .explore-link { text-align: center; }
+    .reservation-bar-wrapper { margin-top: 0; }
+}
+@media (max-width: 767.98px) {
+    body { padding-top: 74px; }
+    .navbar-premium { padding: 10px 0; }
+    .navbar-brand { font-size: 19px; }
+    .navbar-premium .navbar-collapse {
+        background: var(--surface); padding: 14px 16px 20px; margin-top: 10px;
+        border-radius: 10px; box-shadow: 0 12px 30px rgba(0,0,0,.12);
+        max-height: calc(100vh - 85px); overflow-y: auto;
+    }
+    .navbar-premium .navbar-collapse .d-flex.flex-column.flex-xl-row {
+        align-items: stretch !important;
+    }
+    .navbar-premium .navbar-collapse .d-flex.flex-column.flex-xl-row > a.btn { width: 100%; }
+    .navbar-premium .navbar-collapse .d-flex.align-items-center.gap-3 { justify-content: flex-start; }
+    header.vh-100 { min-height: auto; padding: 72px 0 42px; }
+    header.vh-100 .container { padding-top: 16px; padding-bottom: 16px; }
+    header.vh-100 .hero-content-bg { padding: 14px 12px; }
+    header.vh-100 h1 { font-size: clamp(35px, 10vw, 52px); line-height: 1.08; }
+    header.vh-100 .hero-badges-wrapper { display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; }
+    header.vh-100 .hero-badges-wrapper > .text-white-50 { display: none; }
+    header.vh-100 .hero-badge-pill { font-size: 11px; padding: 6px 9px; }
+    .page-hero { min-height: 350px; padding: 40px 0 !important; }
+    .page-hero .hero-content-bg { padding: 20px 16px; }
+    .page-hero h1 { font-size: clamp(34px, 9vw, 48px); }
+    .page-hero p { color: #fff !important; }
+    .reservation-bar-wrapper { width: 100%; margin: 0 !important; padding: 16px 0; }
+    .reservation-bar-wrapper .row { row-gap: 14px; }
+    .reservation-bar-wrapper .card { width: 100%; margin: 0 !important; }
+    .reservation-bar-wrapper .btn, .reservation-bar-wrapper a { max-width: 100%; }
+    .btn-premium, .btn-outline-premium { padding: 12px 18px; font-size: 13px; min-height: 46px; }
+    .explore-link { width: 100%; justify-content: center; }
+    .d-flex.flex-column.flex-sm-row > .btn { width: 100%; }
+    .about-detail-card img { height: 190px; }
+    #menu-filters, #gallery-filters { top: 70px; }
+    #menu-filters .container, #gallery-filters .container { padding-inline: 12px; }
+    #menu-filters, #gallery-filters { overflow-x: auto; justify-content: flex-start !important; flex-wrap: nowrap !important; scrollbar-width: thin; }
+    #menu-filters .filter-btn, #gallery-filters .gallery-filter-btn { white-space: nowrap; }
+    .gallery-story-label { padding: 12px; min-height: 112px; }
+    .gallery-story-label strong { font-size: 13px; }
+    .gallery-story-label small { font-size: 11px; }
+    .masonry-item { min-width: 0; }
+    .about-details .row { align-items: stretch; }
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+
+
+/* Consistent card alignment and order controls */
+#menu-filters .filter-btn { border-radius: 999px; }
+#menu-filters .filter-btn.active { color: #fff !important; }
+.order-mode-group { gap: 6px; }
+.order-mode-group .btn { flex: 1 1 0; min-width: 0; white-space: normal; }
+.order-nav-pill { min-height: 44px; display: flex; align-items: center; justify-content: center; }
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .py-5.bg-surface .row.g-4 > [class*="col-md-4"],
+    .py-5 .row.g-4 > [class*="col-md-4"] { display: flex; }
+    .py-5.bg-surface .row.g-4 > [class*="col-md-4"] > *,
+    .py-5 .row.g-4 > [class*="col-md-4"] > * { width: 100%; }
+}
+@media (max-width: 575.98px) {
+    .order-mode-group { border-radius: 14px !important; }
+    .order-mode-group .btn { width: 100%; }
+    .footer-visit-details { overflow-wrap: anywhere; }
+}
+
+@media (max-width: 767.98px) {
+    .reservation-bar-wrapper { margin-top: 0 !important; }
+    .reservation-bar { padding: 1.15rem; }
+    .sticky-top { top: 70px !important; }
+    .reservation-bar .form-label { display: block; color: var(--text); }
+    .reservation-bar .form-control, .reservation-bar .form-select { width: 100%; min-width: 0; }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .sticky-top { top: 76px !important; }
+}
+
+/* Home-page tablet alignment and legibility */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .py-5 .row.align-items-center img,
+    .py-5 .row img.img-fluid { width: 100%; max-width: 100%; height: 100%; max-height: 420px; object-fit: cover; }
+    .py-5 .row.align-items-center > [class*="col-"] { align-self: stretch; }
+    .py-5 .row.g-4 > [class*="col-"] > .p-4,
+    .py-5 .row.g-4 > [class*="col-"] > .card { height: 100%; }
+    .explore-link { min-height: 44px; }
+}
+@media (max-width: 767.98px) {
+    .home2-page #night-counter + section .lead-text,
+    .home2-page #night-counter + section p { color: #342b25 !important; }
+    .home2-page #night-counter + section .text-muted { color: #5b5048 !important; }
+}
+
+/* =============================================================
+   TABLET VIEW FIXES  (768px – 991px)
+   Requests:
+   1. Home1 & Home2 reservation calendar fields → one per row
+   2. Home1 "Soul of Every Bowl" Explore links → parallel (inline-flex)
+   3. Home1 ACCLAIM & REVIEWS → 1 card per row
+   4. Home2 Seasonal Chef's Specials + Words From The Counter → 1 card per row
+   5. About THE CULINARY TRIAD → 1 card per row
+   ============================================================= */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* 1. Reservation bar calendar / form fields – one field per row */
+    #heroReservationForm .col-md-3,
+    #heroReservationForm .col-md-2,
+    #heroReservationForm .col-md-2.col-6,
+    #heroReservationForm .col-md-3.col-6,
+    #nightReservationForm .col-md-3,
+    #nightReservationForm .col-md-2,
+    #nightReservationForm .col-md-2.col-6,
+    #nightReservationForm .col-md-3.col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* 2. "Soul of Every Bowl" Explore Bowls links – make them inline-flex / parallel */
+    .dish-card-img-wrapper ~ a.explore-link,
+    a.explore-link {
+        display: inline-flex !important;
+        align-items: center;
+    }
+    /* Ensure the four broth cards sit side-by-side (2 columns) on tablet */
+    section.bg-surface .row.g-4 > .col-md-6.col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* 3. Home1 ACCLAIM & REVIEWS – 1 card per row */
+    section:has(> .container > .py-4 > .text-center > .badge-tag-primary[class*="ACCLAIM"]) .row.g-4 > [class*="col-md-4"],
+    /* Broader selector via section order: Section 9 = press/acclaim */
+    #mainNav ~ section:nth-of-type(9) .row.g-4 > [class*="col-md-4"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* 3. ACCLAIM & REVIEWS – target by .press-card parent column */
+    .press-card {
+        width: 100%;
+    }
+    /* Make columns holding press-cards go full-width on tablet */
+    .row.g-4 > .col-md-4:has(.press-card) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* 4. Home2 Seasonal Chef's Specials – 1 card per row */
+    .row.g-4.justify-content-center > .col-md-4:has(.card.bg-surface) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* 4. Home2 Words From The Counter – 1 card per row (same press-card rule above covers this) */
+
+    /* 5. About page – THE CULINARY TRIAD pillars – 1 card per row */
+    section.bg-surface .row.g-4 > .col-md-4:has(.card.text-center) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Fallback selectors without :has() for broader browser support */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* 3 & 4 & 5 – Force all col-md-4 inside row.g-4 that are in relevant sections to full-width.
+       We use data attributes on the section wrappers added inline (see HTML) OR
+       use the specific class combos already present. */
+
+    /* ACCLAIM & REVIEWS section – col-md-4 children */
+    .acclaim-section .row.g-4 > [class*="col-"],
+    /* Seasonal Chef's Specials – col-md-4 children */
+    .specials-section .row.g-4 > [class*="col-"],
+    /* Words From The Counter – col-md-4 children */
+    .testimonials-section .row.g-4 > [class*="col-"],
+    /* THE CULINARY TRIAD – col-md-4 children */
+    .triad-section .row.g-4 > [class*="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* =============================================================
+   ADDITIONAL RESPONSIVE FIXES
+   ============================================================= */
+
+/* 1. Home2 – Night Broth Collection: full-width image + content on tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .broth-collection-section .row.g-0 > .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    /* Reset order so image always comes first on tablet */
+    .broth-collection-section .row.g-0 > .col-md-6.order-2 {
+        order: 2 !important;
+    }
+    .broth-collection-section .row.g-0 > .col-md-6.order-md-1 {
+        order: 1 !important;
+    }
+    .broth-collection-section .row.g-0 > .col-md-6.order-1 {
+        order: 0 !important;
+    }
+    /* Images fill full width */
+    .broth-collection-section .row.g-0 > .col-md-6 img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+}
+
+/* 2. About page – CTA buttons always inline (row) on all screen sizes */
+.about-cta-btns {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+}
+
+/* 3. Order page – takeaway toggle label text wrapping on small tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .order-mode-group {
+        border-radius: 1rem !important;
+    }
+    .order-mode-group .btn.order-nav-pill {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+/* Ensure order journey bar items stack properly below lg */
+@media (max-width: 991.98px) {
+    .order-mode-group {
+        width: 100% !important;
+    }
+}
+
+/* =============================================================
+   MOBILE RESPONSIVE FIXES (<768px)
+   ============================================================= */
+
+@media (max-width: 767.98px) {
+
+    /* 1. Reservation bar calendar fields – one per row on mobile */
+    .reservation-bar .row > [class*="col-"],
+    .reservation-bar .row > .col-sm-6,
+    .reservation-bar .row > .col-sm-4,
+    .reservation-bar .row > .col-sm-3,
+    .reservation-bar .row > .col-md-3,
+    .reservation-bar .row > .col-md-4,
+    .reservation-bar .row > .col-lg-2,
+    .reservation-bar .row > .col-lg-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* 2. Menu page – filter buttons stack one per row on mobile */
+    #menu-filters {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    #menu-filters .btn.filter-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 3. Gallery page – filter buttons stack one per row on mobile */
+    #gallery-filters {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    #gallery-filters .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 4. Locations – Private Dining CTA buttons stack one per row on mobile */
+    .py-5.my-5.text-center .d-flex.justify-content-center.gap-3 {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .py-5.my-5.text-center .d-flex.justify-content-center.gap-3 .btn {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* 5. Home-2 – "Your Stool At The Counter Is Waiting" CTA buttons: equal size on mobile */
+    /* 6. About – "Experience The Bowl For Yourself" CTA buttons: equal size on mobile */
+    .py-5.bg-surface.text-center .d-flex.flex-wrap.justify-content-center.gap-3,
+    .py-5.my-4.text-center .d-flex.flex-row.flex-wrap.justify-content-center.gap-3 {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .py-5.bg-surface.text-center .d-flex.flex-wrap.justify-content-center.gap-3 .btn,
+    .py-5.my-4.text-center .d-flex.flex-row.flex-wrap.justify-content-center.gap-3 .btn {
+        width: 100%;
+        max-width: 340px;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
