@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAMI Noodle | Visual Journey & Photo Gallery</title>
-    <meta name="description" content="Immerse yourself in the sights of NAMI Noodle. Explore steaming ramen bowls, master kitchen craftsmanship, and intimate izakaya ambiance.">
+    <meta name="description"
+        content="Immerse yourself in the sights of NAMI Noodle. Explore steaming ramen bowls, master kitchen craftsmanship, and intimate izakaya ambiance.">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -129,7 +130,7 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2 (Izakaya)</a></li>
-                    <li class="nav-item"><a class="nav-link" href="our-story.html">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="our-story.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
@@ -147,7 +148,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="py-5 text-center position-relative overflow-hidden bg-dark-deep text-white" style="margin-top: 10px;">
+    <header class="page-hero py-5 text-center position-relative overflow-hidden bg-dark-deep text-white">
         <div class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0;">
             <img src="assets/images/gallery-hero.jpg" alt="Gallery Hero Background"
                 class="w-100 h-100 object-fit-cover opacity-50">
@@ -155,7 +156,8 @@
         <div class="container py-5 reveal-up active position-relative hero-content-bg" style="z-index: 1;">
             <span class="badge-tag badge-tag-accent mb-2">IMMERSIVE PERSPECTIVES</span>
             <h1 class="display-3 fw-bold mb-3 text-white">Moments Inside Our House</h1>
-            <p class="lead-text mx-auto text-white" style="max-width: 600px;">A photographic chronicle through our simmering stockpots, noodle folding benches, and atmospheric dining spaces.</p>
+            <p class="lead-text mx-auto text-white" style="max-width: 600px;">A photographic chronicle through our
+                simmering stockpots, noodle folding benches, and atmospheric dining spaces.</p>
         </div>
     </header>
 
@@ -163,11 +165,16 @@
     <section class="py-4 border-bottom border-secondary border-opacity-10 bg-surface">
         <div class="container">
             <div class="d-flex flex-wrap justify-content-center gap-2" id="gallery-filters">
-                <button class="btn btn-outline-secondary gallery-filter-btn active rounded-pill px-4" data-filter="all">All Photos</button>
-                <button class="btn btn-outline-secondary gallery-filter-btn rounded-pill px-4" data-filter="bowls">Bowls & Broth</button>
-                <button class="btn btn-outline-secondary gallery-filter-btn rounded-pill px-4" data-filter="craft">Kitchen & Craft</button>
-                <button class="btn btn-outline-secondary gallery-filter-btn rounded-pill px-4" data-filter="space">Dining Space</button>
-                <button class="btn btn-outline-secondary gallery-filter-btn rounded-pill px-4" data-filter="plates">Plates & Sake</button>
+                <button class="btn btn-outline-secondary gallery-filter-btn active rounded-pill px-4"
+                    data-filter="all">All Photos</button>
+                <button class="btn btn-outline-secondary gallery-filter-btn rounded-pill px-4" data-filter="bowls">Bowls
+                    & Broth</button>
+                <button class="btn btn-outline-secondary gallery-filter-btn rounded-pill px-4"
+                    data-filter="craft">Kitchen & Craft</button>
+                <button class="btn btn-outline-secondary gallery-filter-btn rounded-pill px-4"
+                    data-filter="space">Dining Space</button>
+                <button class="btn btn-outline-secondary gallery-filter-btn rounded-pill px-4"
+                    data-filter="plates">Plates & Sake</button>
             </div>
         </div>
     </section>
@@ -175,10 +182,28 @@
     <!-- Gallery Grid -->
     <section class="py-5 my-4">
         <div class="container">
+            <div class="gallery-story-intro row g-3 mb-4">
+                <div class="col-6 col-lg-3">
+                    <div class="gallery-story-label"><span>01</span><strong>Signature Ramen</strong><small>Broth,
+                            noodles & toppings</small></div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="gallery-story-label"><span>02</span><strong>Noodles & Special
+                            Dishes</strong><small>Small plates and seasonal bowls</small></div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="gallery-story-label"><span>03</span><strong>Restaurant Ambience</strong><small>Counter
+                            seats and warm details</small></div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="gallery-story-label"><span>04</span><strong>Behind the Kitchen</strong><small>People,
+                            craft and preparation</small></div>
+                </div>
+            </div>
             <div class="masonry-grid" id="gallery-grid">
                 <!-- Image 1: Master Chef -->
                 <div class="masonry-item reveal-up" data-category="craft">
-                    <img src="assets/images/chef-master.jpg" alt="Master Kenjiro Sato plating ramen">
+                    <img src="assets/images/gallery1.jpg" alt="Master Kenjiro Sato plating ramen">
                     <div class="masonry-overlay">
                         <span class="badge-tag badge-tag-accent mb-1 align-self-start">Kitchen Craft</span>
                         <h5 class="text-white mb-1">Master Chef At The Stockpots</h5>
@@ -188,7 +213,7 @@
 
                 <!-- Image 2: Ramen Bowl -->
                 <div class="masonry-item reveal-up" data-category="bowls">
-                    <img src="assets/images/gallery1.jpg" alt="Shiromaru Tonkotsu Bowl">
+                    <img src="assets/images/gallery2.jpg" alt="Shiromaru Tonkotsu Bowl">
                     <div class="masonry-overlay">
                         <span class="badge-tag badge-tag-primary mb-1 align-self-start">Signature Bowl</span>
                         <h5 class="text-white mb-1">Shiromaru Tokusei Classic</h5>
@@ -198,7 +223,7 @@
 
                 <!-- Image 3: Sizzling Izakaya -->
                 <div class="masonry-item reveal-up" data-category="plates">
-                    <img src="assets/images/izakaya-starters.jpg" alt="Crispy Gyoza & Karaage">
+                    <img src="assets/images/gallery3.jpg" alt="Crispy Gyoza & Karaage">
                     <div class="masonry-overlay">
                         <span class="badge-tag badge-tag-accent mb-1 align-self-start">Izakaya Small Plates</span>
                         <h5 class="text-white mb-1">Pan-Seared Gyoza & Karaage</h5>
@@ -208,7 +233,7 @@
 
                 <!-- Image 4: Sake Set -->
                 <div class="masonry-item reveal-up" data-category="plates">
-                    <img src="assets/images/sake-pairings.jpg" alt="Junmai Sake and Whisky Highball">
+                    <img src="assets/images/gallery4.jpg" alt="Junmai Sake and Whisky Highball">
                     <div class="masonry-overlay">
                         <span class="badge-tag badge-tag-accent mb-1 align-self-start">Pairings</span>
                         <h5 class="text-white mb-1">Niigata Sake & Smoked Highball</h5>
@@ -218,7 +243,7 @@
 
                 <!-- Image 5: Restaurant Interior -->
                 <div class="masonry-item reveal-up" data-category="space">
-                    <img src="assets/images/restaurant_interior_1789637710836.jpg" alt="Downtown Flagship Dining Room">
+                    <img src="assets/images/gallery5.jpg" alt="Downtown Flagship Dining Room">
                     <div class="masonry-overlay">
                         <span class="badge-tag badge-tag-primary mb-1 align-self-start">Ambiance</span>
                         <h5 class="text-white mb-1">Downtown Flagship Dining Hall</h5>
@@ -228,7 +253,7 @@
 
                 <!-- Image 6: Westside Counter -->
                 <div class="masonry-item reveal-up" data-category="space">
-                    <img src="assets/images/house.jpg" alt="Westside Counter Seating">
+                    <img src="assets/images/gallery6.jpg" alt="Westside Counter Seating">
                     <div class="masonry-overlay">
                         <span class="badge-tag badge-tag-primary mb-1 align-self-start">Ambiance</span>
                         <h5 class="text-white mb-1">The 14-Seat Cedar Counter</h5>
@@ -238,7 +263,7 @@
 
                 <!-- Image 7: Kurobuta Black Garlic -->
                 <div class="masonry-item reveal-up" data-category="bowls">
-                    <img src="assets/images/gallery3.jpg" alt="Kurobuta Black Garlic Tonkotsu">
+                    <img src="assets/images/gallery7.jpg" alt="Kurobuta Black Garlic Tonkotsu">
                     <div class="masonry-overlay">
                         <span class="badge-tag badge-tag-primary mb-1 align-self-start">Signature Bowl</span>
                         <h5 class="text-white mb-1">Black Garlic Mayu Tonkotsu</h5>
@@ -248,7 +273,7 @@
 
                 <!-- Image 8: Handmade Noodle Texture -->
                 <div class="masonry-item reveal-up" data-category="craft">
-                    <img src="assets/images/texture.jpg" alt="Handmade Noodle Cutting">
+                    <img src="assets/images/gallery8.jpg" alt="Handmade Noodle Cutting">
                     <div class="masonry-overlay">
                         <span class="badge-tag badge-tag-accent mb-1 align-self-start">Kitchen Craft</span>
                         <h5 class="text-white mb-1">Hand-Cut Hokkaido Wheat</h5>
@@ -258,7 +283,7 @@
 
                 <!-- Image 9: Spicy Miso Bowl -->
                 <div class="masonry-item reveal-up" data-category="bowls">
-                    <img src="assets/images/gallery4.jpg" alt="Spicy Red Miso Firebowl">
+                    <img src="assets/images/gallery9.jpg" alt="Spicy Red Miso Firebowl">
                     <div class="masonry-overlay">
                         <span class="badge-tag badge-tag-primary mb-1 align-self-start">Signature Bowl</span>
                         <h5 class="text-white mb-1">Spicy Red Miso Firebowl</h5>
@@ -280,8 +305,10 @@
         <div class="container py-4 reveal-up">
             <span class="badge-tag badge-tag-accent mb-2">TAG US ON SOCIAL</span>
             <h3 class="display-6 mb-2">#NAMINoodleHouse</h3>
-            <p class="text-muted mx-auto mb-4" style="max-width: 500px;">Share your slurp moments on Instagram and TikTok. Tag us for a chance to be featured on our monthly community board.</p>
-            <a href="https://instagram.com" target="_blank" class="btn btn-outline-premium">Follow @NAMINoodle on Instagram</a>
+            <p class="text-muted mx-auto mb-4" style="max-width: 500px;">Share your slurp moments on Instagram and
+                TikTok. Tag us for a chance to be featured on our monthly community board.</p>
+            <a href="https://instagram.com" target="_blank" class="btn btn-outline-premium">Follow @NAMINoodle on
+                Instagram</a>
         </div>
     </section>
 
@@ -290,18 +317,21 @@
         <div class="container pt-5">
             <div class="row mb-5 g-4 text-center text-md-start">
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <a class="navbar-brand d-inline-flex align-items-center gap-2 mb-4 text-decoration-none" href="index.html">
+                    <a class="navbar-brand d-inline-flex align-items-center gap-2 mb-4 text-decoration-none"
+                        href="index.html">
                         <img src="assets/images/logo.svg" alt="NAMI Noodle Logo" width="38" height="38">
                         <span class="fs-4">NAMI NOODLE</span>
                     </a>
-                    <p class="text-muted pe-lg-4">Crafted 18-Hour Broth &bull; Tokyo Night Counter &bull; Izakaya Spirits. Dedicated to authentic ramen artistry in every bowl.</p>
+                    <p class="text-muted pe-lg-4">Crafted 18-Hour Broth &bull; Tokyo Night Counter &bull; Izakaya
+                        Spirits. Dedicated to authentic ramen artistry in every bowl.</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-2 mb-4 mb-md-0">
                     <h5 class="text-accent mb-4 text-uppercase">Explore</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="index.html" class="text-muted text-decoration-none footer-link">Home 1</a></li>
-                        <li><a href="home-2.html" class="text-muted text-decoration-none footer-link">Home 2 (Izakaya)</a></li>
-                        <li><a href="our-story.html" class="text-muted text-decoration-none footer-link">Our Story</a></li>
+                        <li><a href="home-2.html" class="text-muted text-decoration-none footer-link">Home 2
+                                (Izakaya)</a></li>
+                        <li><a href="our-story.html" class="text-muted text-decoration-none footer-link">About</a></li>
                         <li><a href="menu.html" class="text-muted text-decoration-none footer-link">Menu</a></li>
                         <li><a href="gallery.html" class="text-muted text-decoration-none footer-link">Gallery</a></li>
                     </ul>
@@ -309,14 +339,22 @@
                 <div class="col-12 col-md-6 col-lg-2 mb-4 mb-md-0">
                     <h5 class="text-accent mb-4 text-uppercase">Guest Services</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li><a href="locations.html" class="text-muted text-decoration-none footer-link">Locations & Hours</a></li>
-                        <li><a href="order.html" class="text-muted text-decoration-none footer-link">Order Online</a></li>
-                        <li><a href="contact.html" class="text-muted text-decoration-none footer-link">Reservations</a></li>
-                        <li><a href="contact.html#faqAccordion" class="text-muted text-decoration-none footer-link">Dining FAQs</a></li>
+                        <li><a href="locations.html" class="text-muted text-decoration-none footer-link">Locations &
+                                Hours</a></li>
+                        <li><a href="order.html" class="text-muted text-decoration-none footer-link">Order Online</a>
+                        </li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none footer-link">Reservations</a>
+                        </li>
+                        <li><a href="contact.html#faqAccordion"
+                                class="text-muted text-decoration-none footer-link">Dining FAQs</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <h5 class="text-accent mb-4 text-uppercase">Locations</h5>
+                    <div class="footer-visit-details mb-3"><strong>Downtown Flagship</strong><br>123 Artisan Way,
+                        Culinary District, NY 10001<br><a href="tel:+15551234567">+1 (555) 123-4567</a><br><a
+                            href="mailto:downtown@naminoodle.com">downtown@naminoodle.com</a><br><span>Open today •
+                            closes 11 PM</span><br><a href="locations.html">Directions & hours →</a></div>
                     <ul class="list-unstyled text-muted d-flex flex-column gap-2">
                         <li><strong>Downtown Flagship:</strong> 123 Artisan Way, NY 10001 &bull; (555) 123-4567</li>
                         <li><strong>Westside Counter:</strong> 89 Ramen Row, NY 10014 &bull; (555) 987-6543</li>

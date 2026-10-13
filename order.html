@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAMI Noodle | Order Online (Pickup & Delivery)</title>
-    <meta name="description" content="Order freshly crafted artisan ramen bowls, izakaya small plates, and drinks online for pickup or delivery from NAMI Noodle.">
+    <meta name="description"
+        content="Order freshly crafted artisan ramen bowls, izakaya small plates, and drinks online for pickup or delivery from NAMI Noodle.">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,7 +66,7 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2 (Izakaya)</a></li>
-                    <li class="nav-item"><a class="nav-link" href="our-story.html">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="our-story.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="locations.html">Locations</a></li>
@@ -76,40 +77,45 @@
                         <button class="nav-icon-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
                         <button class="nav-icon-btn" id="rtl-toggle" aria-label="Toggle RTL Mode">⇄</button>
                     </div>
-                    <a href="order.html" class="btn btn-premium active">Order Online</a>
+                    <a href="order.html" class="btn btn-premium">Order Online</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Header -->
-    <header class="py-5 text-center position-relative overflow-hidden bg-dark-deep text-white" style="margin-top: 10px;">
+    <header class="page-hero py-5 text-center position-relative overflow-hidden bg-dark-deep text-white">
         <div class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0;">
-            <img src="assets/images/restaurant_interior_1789637710836.jpg" alt="Order Background" class="w-100 h-100 object-fit-cover opacity-50">
+            <img src="assets/images/restaurant_interior_1789637710836.jpg" alt="Order Background"
+                class="w-100 h-100 object-fit-cover opacity-50">
         </div>
         <div class="container py-5 reveal-up active position-relative hero-content-bg" style="z-index: 1;">
             <span class="badge-tag badge-tag-accent mb-2">HOT & FRESH PICKUP / DELIVERY</span>
             <h1 class="display-3 fw-bold mb-3 text-white">Order From Our Kitchen</h1>
-            <p class="lead-text mx-auto text-white" style="max-width: 550px;">Packed with thermal broth-separation bowls so your noodles stay perfectly firm until the moment you pour.</p>
+            <p class="lead-text mx-auto text-white" style="max-width: 550px;">Packed with thermal broth-separation bowls
+                so your noodles stay perfectly firm until the moment you pour.</p>
         </div>
     </header>
 
-    <!-- ORDER JOURNEY BAR: Mode & Location Selector -->
     <section class="py-4 bg-surface border-bottom border-secondary border-opacity-10">
         <div class="container">
             <div class="row g-3 align-items-center">
-                <div class="col-md-6">
-                    <div class="btn-group w-100 p-1 bg-surface border border-secondary border-opacity-25 rounded-pill" role="group">
+                <div class="col-12 col-lg-6">
+                    <div class="order-mode-group d-flex flex-column flex-sm-row w-100 p-1 bg-surface border border-secondary border-opacity-25 rounded-pill"
+                        role="group">
                         <input type="radio" class="btn-check" name="orderType" id="typePickup" checked>
-                        <label class="btn order-nav-pill rounded-pill fw-bold" for="typePickup">🥡 Takeaway Pickup (Ready in 15-20 min)</label>
+                        <label class="btn order-nav-pill rounded-pill fw-bold" for="typePickup">🥡 Takeaway Pickup
+                            (15-20 min)</label>
                         <input type="radio" class="btn-check" name="orderType" id="typeDelivery">
-                        <label class="btn order-nav-pill rounded-pill fw-bold" for="typeDelivery">🚴 Local Delivery (35-45 min)</label>
+                        <label class="btn order-nav-pill rounded-pill fw-bold" for="typeDelivery">🚴 Local Delivery
+                            (35-45 min)</label>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-12 col-lg-6">
                     <div class="d-flex align-items-center gap-2">
                         <span class="text-muted small text-nowrap fw-bold text-uppercase">Kitchen:</span>
-                        <select class="form-select border-secondary border-opacity-25 rounded-3" id="orderLocationSelect">
+                        <select class="form-select border-secondary border-opacity-25 rounded-3"
+                            id="orderLocationSelect">
                             <option value="downtown" selected>Downtown Flagship — 123 Artisan Way (Est. 15 min)</option>
                             <option value="westside">Westside Counter — 89 Ramen Row (Est. 20 min)</option>
                         </select>
@@ -127,43 +133,51 @@
                 <div class="col-lg-8">
                     <!-- Category: Signature Ramen -->
                     <div class="mb-5">
-                        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom border-secondary border-opacity-25 pb-2">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-4 border-bottom border-secondary border-opacity-25 pb-2">
                             <h3 class="mb-0">1. Signature Ramen Bowls</h3>
                             <span class="text-muted small">Broth packaged separately</span>
                         </div>
                         <div class="d-flex flex-column gap-3">
                             <!-- Ramen 1 -->
-                            <div class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
+                            <div
+                                class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
                                 <div class="row align-items-center g-3">
                                     <div class="col-auto">
-                                        <img src="assets/images/choose1.jpg" alt="Shiromaru Classic" class="rounded-3" style="width: 90px; height: 90px; object-fit: cover;">
+                                        <img src="assets/images/choose1.jpg" alt="Shiromaru Classic" class="rounded-3"
+                                            style="width: 90px; height: 90px; object-fit: cover;">
                                     </div>
                                     <div class="col">
                                         <div class="d-flex justify-content-between">
                                             <h5 class="mb-1">Shiromaru Tokusei Classic</h5>
                                             <span class="fw-bold fs-5 text-primary">$16.00</span>
                                         </div>
-                                        <p class="text-muted small mb-2">18-hr pork bone broth, ultra-thin noodles, chashu pork, seasoned ajitama egg, kikurage mushrooms.</p>
+                                        <p class="text-muted small mb-2">18-hr pork bone broth, ultra-thin noodles,
+                                            chashu pork, seasoned ajitama egg, kikurage mushrooms.</p>
                                         <div class="d-flex gap-2">
                                             <button type="button" class="btn btn-outline-premium btn-sm add-to-cart-btn"
-                                                data-name="Shiromaru Tokusei Classic" data-price="16.00">+ Add To Bag</button>
+                                                data-name="Shiromaru Tokusei Classic" data-price="16.00">+ Add To
+                                                Bag</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Ramen 2 -->
-                            <div class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
+                            <div
+                                class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
                                 <div class="row align-items-center g-3">
                                     <div class="col-auto">
-                                        <img src="assets/images/choose2.jpg" alt="Tokyo Shoyu" class="rounded-3" style="width: 90px; height: 90px; object-fit: cover;">
+                                        <img src="assets/images/choose2.jpg" alt="Tokyo Shoyu" class="rounded-3"
+                                            style="width: 90px; height: 90px; object-fit: cover;">
                                     </div>
                                     <div class="col">
                                         <div class="d-flex justify-content-between">
                                             <h5 class="mb-1">Tokyo Shoyu Classic</h5>
                                             <span class="fw-bold fs-5 text-primary">$15.00</span>
                                         </div>
-                                        <p class="text-muted small mb-2">Aged soy tare broth, wavy springy noodles, chicken chashu, menma bamboo, nori.</p>
+                                        <p class="text-muted small mb-2">Aged soy tare broth, wavy springy noodles,
+                                            chicken chashu, menma bamboo, nori.</p>
                                         <div class="d-flex gap-2">
                                             <button type="button" class="btn btn-outline-premium btn-sm add-to-cart-btn"
                                                 data-name="Tokyo Shoyu Classic" data-price="15.00">+ Add To Bag</button>
@@ -173,40 +187,48 @@
                             </div>
 
                             <!-- Ramen 3 -->
-                            <div class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
+                            <div
+                                class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
                                 <div class="row align-items-center g-3">
                                     <div class="col-auto">
-                                        <img src="assets/images/choose4.jpg" alt="Spicy Red Miso" class="rounded-3" style="width: 90px; height: 90px; object-fit: cover;">
+                                        <img src="assets/images/choose4.jpg" alt="Spicy Red Miso" class="rounded-3"
+                                            style="width: 90px; height: 90px; object-fit: cover;">
                                     </div>
                                     <div class="col">
                                         <div class="d-flex justify-content-between">
                                             <h5 class="mb-1">Spicy Red Miso Firebowl</h5>
                                             <span class="fw-bold fs-5 text-primary">$17.00</span>
                                         </div>
-                                        <p class="text-muted small mb-2">Red fermented miso, chili oil, spicy ground pork, sweet corn, thick noodles.</p>
+                                        <p class="text-muted small mb-2">Red fermented miso, chili oil, spicy ground
+                                            pork, sweet corn, thick noodles.</p>
                                         <div class="d-flex gap-2">
                                             <button type="button" class="btn btn-outline-premium btn-sm add-to-cart-btn"
-                                                data-name="Spicy Red Miso Firebowl" data-price="17.00">+ Add To Bag</button>
+                                                data-name="Spicy Red Miso Firebowl" data-price="17.00">+ Add To
+                                                Bag</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Ramen 4 -->
-                            <div class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
+                            <div
+                                class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
                                 <div class="row align-items-center g-3">
                                     <div class="col-auto">
-                                        <img src="assets/images/menu4.jpg" alt="Kyoto Truffle Vegan" class="rounded-3" style="width: 90px; height: 90px; object-fit: cover;">
+                                        <img src="assets/images/menu4.jpg" alt="Kyoto Truffle Vegan" class="rounded-3"
+                                            style="width: 90px; height: 90px; object-fit: cover;">
                                     </div>
                                     <div class="col">
                                         <div class="d-flex justify-content-between">
                                             <h5 class="mb-1">Kyoto Truffle Kinoko (Vegan)</h5>
                                             <span class="fw-bold fs-5 text-primary">$18.00</span>
                                         </div>
-                                        <p class="text-muted small mb-2">Shiitake & kelp broth, black truffle essence, pan-seared tofu, lotus chips.</p>
+                                        <p class="text-muted small mb-2">Shiitake & kelp broth, black truffle essence,
+                                            pan-seared tofu, lotus chips.</p>
                                         <div class="d-flex gap-2">
                                             <button type="button" class="btn btn-outline-premium btn-sm add-to-cart-btn"
-                                                data-name="Kyoto Truffle Kinoko (Vegan)" data-price="18.00">+ Add To Bag</button>
+                                                data-name="Kyoto Truffle Kinoko (Vegan)" data-price="18.00">+ Add To
+                                                Bag</button>
                                         </div>
                                     </div>
                                 </div>
@@ -216,39 +238,47 @@
 
                     <!-- Category: Izakaya Small Plates -->
                     <div class="mb-5">
-                        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom border-secondary border-opacity-25 pb-2">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-4 border-bottom border-secondary border-opacity-25 pb-2">
                             <h3 class="mb-0">2. Izakaya Starters & Sides</h3>
                             <span class="text-muted small">Crispy & ready to share</span>
                         </div>
                         <div class="d-flex flex-column gap-3">
-                            <div class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
+                            <div
+                                class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
                                 <div class="row align-items-center g-3">
                                     <div class="col-auto">
-                                        <img src="assets/images/izakaya-starters.jpg" alt="Pan-Fried Gyoza" class="rounded-3" style="width: 90px; height: 90px; object-fit: cover;">
+                                        <img src="assets/images/izakaya-starters.jpg" alt="Pan-Fried Gyoza"
+                                            class="rounded-3" style="width: 90px; height: 90px; object-fit: cover;">
                                     </div>
                                     <div class="col">
                                         <div class="d-flex justify-content-between">
                                             <h5 class="mb-1">Pan-Fried Pork Gyoza (6pc)</h5>
                                             <span class="fw-bold fs-5 text-primary">$9.00</span>
                                         </div>
-                                        <p class="text-muted small mb-2">Crispy bottom pork and chive dumplings with black vinegar dipping tare.</p>
+                                        <p class="text-muted small mb-2">Crispy bottom pork and chive dumplings with
+                                            black vinegar dipping tare.</p>
                                         <button type="button" class="btn btn-outline-premium btn-sm add-to-cart-btn"
-                                            data-name="Pan-Fried Pork Gyoza (6pc)" data-price="9.00">+ Add To Bag</button>
+                                            data-name="Pan-Fried Pork Gyoza (6pc)" data-price="9.00">+ Add To
+                                            Bag</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
+                            <div
+                                class="card p-3 bg-surface border border-secondary border-opacity-10 rounded-3 shadow-sm hover-lift">
                                 <div class="row align-items-center g-3">
                                     <div class="col-auto">
-                                        <img src="assets/images/choose3.jpg" alt="Tokyo Chicken Karaage" class="rounded-3" style="width: 90px; height: 90px; object-fit: cover;">
+                                        <img src="assets/images/choose3.jpg" alt="Tokyo Chicken Karaage"
+                                            class="rounded-3" style="width: 90px; height: 90px; object-fit: cover;">
                                     </div>
                                     <div class="col">
                                         <div class="d-flex justify-content-between">
                                             <h5 class="mb-1">Tokyo Chicken Karaage</h5>
                                             <span class="fw-bold fs-5 text-primary">$11.00</span>
                                         </div>
-                                        <p class="text-muted small mb-2">Double-fried thigh meat tossed in shichimi with yuzu mayo.</p>
+                                        <p class="text-muted small mb-2">Double-fried thigh meat tossed in shichimi with
+                                            yuzu mayo.</p>
                                         <button type="button" class="btn btn-outline-premium btn-sm add-to-cart-btn"
                                             data-name="Tokyo Chicken Karaage" data-price="11.00">+ Add To Bag</button>
                                     </div>
@@ -259,12 +289,14 @@
 
                     <!-- Category: Extra Toppings & Drinks -->
                     <div>
-                        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom border-secondary border-opacity-25 pb-2">
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-4 border-bottom border-secondary border-opacity-25 pb-2">
                             <h3 class="mb-0">3. Drinks & Extra Toppings</h3>
                         </div>
                         <div class="row g-3">
                             <div class="col-sm-6">
-                                <div class="p-3 bg-surface border border-secondary border-opacity-10 rounded-3 d-flex justify-content-between align-items-center">
+                                <div
+                                    class="p-3 bg-surface border border-secondary border-opacity-10 rounded-3 d-flex justify-content-between align-items-center">
                                     <div>
                                         <h6 class="mb-0">Kaedama Noodle Refill</h6>
                                         <small class="text-muted">$2.50</small>
@@ -274,7 +306,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="p-3 bg-surface border border-secondary border-opacity-10 rounded-3 d-flex justify-content-between align-items-center">
+                                <div
+                                    class="p-3 bg-surface border border-secondary border-opacity-10 rounded-3 d-flex justify-content-between align-items-center">
                                     <div>
                                         <h6 class="mb-0">Ajitama Seasoned Egg</h6>
                                         <small class="text-muted">$2.00</small>
@@ -284,7 +317,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="p-3 bg-surface border border-secondary border-opacity-10 rounded-3 d-flex justify-content-between align-items-center">
+                                <div
+                                    class="p-3 bg-surface border border-secondary border-opacity-10 rounded-3 d-flex justify-content-between align-items-center">
                                     <div>
                                         <h6 class="mb-0">Cold-Brew Hojicha Tea</h6>
                                         <small class="text-muted">$5.00</small>
@@ -294,7 +328,8 @@
                                 </div>
                             </div>
                             <div class="col-sm-6">
-                                <div class="p-3 bg-surface border border-secondary border-opacity-10 rounded-3 d-flex justify-content-between align-items-center">
+                                <div
+                                    class="p-3 bg-surface border border-secondary border-opacity-10 rounded-3 d-flex justify-content-between align-items-center">
                                     <div>
                                         <h6 class="mb-0">Yuzu Shiso Spritz (Soda)</h6>
                                         <small class="text-muted">$6.00</small>
@@ -309,7 +344,8 @@
 
                 <!-- Right Sticky Cart Sidebar -->
                 <div class="col-lg-4">
-                    <div class="bg-surface p-4 rounded-3 border border-secondary border-opacity-25 shadow-sm sticky-top" style="top: 110px;">
+                    <div class="bg-surface p-4 rounded-3 border border-secondary border-opacity-25 shadow-sm sticky-top"
+                        style="top: 110px;">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <h4 class="mb-0 text-accent">Your Order Bag</h4>
                             <span class="badge-tag badge-tag-primary" id="cartItemCountBadge">0 items</span>
@@ -342,7 +378,8 @@
                                 <span class="text-primary" id="cartTotal">$0.00</span>
                             </div>
 
-                            <button type="button" class="btn btn-premium w-100 py-3 disabled" id="checkoutBtn" data-bs-toggle="modal" data-bs-target="#orderSuccessModal">
+                            <button type="button" class="btn btn-premium w-100 py-3 disabled" id="checkoutBtn"
+                                data-bs-toggle="modal" data-bs-target="#orderSuccessModal">
                                 Proceed to Checkout
                             </button>
                         </div>
@@ -360,7 +397,8 @@
                     <div class="display-3 mb-3">🎉</div>
                     <h3 class="mb-2">Order Confirmed!</h3>
                     <p class="text-accent fw-bold mb-3">Order #NAMI-88219</p>
-                    <p class="text-muted mb-4">Our kitchen team has fired your order. Broth and noodles are being prepared and will be packaged in thermal containers.</p>
+                    <p class="text-muted mb-4">Our kitchen team has fired your order. Broth and noodles are being
+                        prepared and will be packaged in thermal containers.</p>
                     <div class="p-3 bg-cream bg-opacity-25 rounded-2 mb-4 text-start">
                         <div class="d-flex justify-content-between small mb-1">
                             <strong>Estimated Ready Time:</strong>
@@ -371,7 +409,8 @@
                             <span>Downtown Flagship Counter</span>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-premium px-5 py-2" data-bs-dismiss="modal" id="resetCartBtn">Return To Home</button>
+                    <button type="button" class="btn btn-premium px-5 py-2" data-bs-dismiss="modal"
+                        id="resetCartBtn">Return To Home</button>
                 </div>
             </div>
         </div>
@@ -382,18 +421,21 @@
         <div class="container pt-5">
             <div class="row mb-5 g-4 text-center text-md-start">
                 <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
-                    <a class="navbar-brand d-inline-flex align-items-center gap-2 mb-4 text-decoration-none" href="index.html">
+                    <a class="navbar-brand d-inline-flex align-items-center gap-2 mb-4 text-decoration-none"
+                        href="index.html">
                         <img src="assets/images/logo.svg" alt="NAMI Noodle Logo" width="38" height="38">
                         <span class="fs-4">NAMI NOODLE</span>
                     </a>
-                    <p class="text-muted pe-lg-4">Crafted 18-Hour Broth &bull; Tokyo Night Counter &bull; Izakaya Spirits. Dedicated to authentic ramen artistry in every bowl.</p>
+                    <p class="text-muted pe-lg-4">Crafted 18-Hour Broth &bull; Tokyo Night Counter &bull; Izakaya
+                        Spirits. Dedicated to authentic ramen artistry in every bowl.</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-2 mb-4 mb-md-0">
                     <h5 class="text-accent mb-4 text-uppercase">Explore</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
                         <li><a href="index.html" class="text-muted text-decoration-none footer-link">Home 1</a></li>
-                        <li><a href="home-2.html" class="text-muted text-decoration-none footer-link">Home 2 (Izakaya)</a></li>
-                        <li><a href="our-story.html" class="text-muted text-decoration-none footer-link">Our Story</a></li>
+                        <li><a href="home-2.html" class="text-muted text-decoration-none footer-link">Home 2
+                                (Izakaya)</a></li>
+                        <li><a href="our-story.html" class="text-muted text-decoration-none footer-link">About</a></li>
                         <li><a href="menu.html" class="text-muted text-decoration-none footer-link">Menu</a></li>
                         <li><a href="gallery.html" class="text-muted text-decoration-none footer-link">Gallery</a></li>
                     </ul>
@@ -401,14 +443,22 @@
                 <div class="col-12 col-md-6 col-lg-2 mb-4 mb-md-0">
                     <h5 class="text-accent mb-4 text-uppercase">Guest Services</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li><a href="locations.html" class="text-muted text-decoration-none footer-link">Locations & Hours</a></li>
-                        <li><a href="order.html" class="text-muted text-decoration-none footer-link">Order Online</a></li>
-                        <li><a href="contact.html" class="text-muted text-decoration-none footer-link">Reservations</a></li>
-                        <li><a href="contact.html#faqAccordion" class="text-muted text-decoration-none footer-link">Dining FAQs</a></li>
+                        <li><a href="locations.html" class="text-muted text-decoration-none footer-link">Locations &
+                                Hours</a></li>
+                        <li><a href="order.html" class="text-muted text-decoration-none footer-link">Order Online</a>
+                        </li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none footer-link">Reservations</a>
+                        </li>
+                        <li><a href="contact.html#faqAccordion"
+                                class="text-muted text-decoration-none footer-link">Dining FAQs</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <h5 class="text-accent mb-4 text-uppercase">Locations</h5>
+                    <div class="footer-visit-details mb-3"><strong>Downtown Flagship</strong><br>123 Artisan Way,
+                        Culinary District, NY 10001<br><a href="tel:+15551234567">+1 (555) 123-4567</a><br><a
+                            href="mailto:downtown@naminoodle.com">downtown@naminoodle.com</a><br><span>Open today •
+                            closes 11 PM</span><br><a href="locations.html">Directions & hours →</a></div>
                     <ul class="list-unstyled text-muted d-flex flex-column gap-2">
                         <li><strong>Downtown Flagship:</strong> 123 Artisan Way, NY 10001 &bull; (555) 123-4567</li>
                         <li><strong>Westside Counter:</strong> 89 Ramen Row, NY 10014 &bull; (555) 987-6543</li>
